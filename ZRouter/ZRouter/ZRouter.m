@@ -125,28 +125,28 @@ static id instance = nil;
     return result;
 }
 
-/// URL Format: scheme://UIViewController:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZRouterMode/method?keys=values
 - (id)openURL:(NSURL *)url withRetainIdentifier:(NSString *)retainIdentifier {
     return [self openURL:url withRetainIdentifier:retainIdentifier completion:nil];
 }
 
-/// URL Format: scheme://UIViewController:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZRouterMode/method?keys=values
 - (id)openURL:(NSURL *)url completion:(void(^)(id))completion {
     return [self openURL:url withRetainIdentifier:nil completion:completion];
 }
 
-/// URL Format: scheme://UIViewController:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZRouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier completion:(void(^)(id))completion {
     NSURL *url = [NSURL URLWithString:urlString];
     return [self openURL:url withRetainIdentifier:retainIdentifier completion:completion];
 }
 
-/// URL Format: scheme://UIViewController:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZRouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier {
     return [self openURLString:urlString withRetainIdentifier:retainIdentifier completion:nil];
 }
 
-/// URL Format: scheme://UIViewController:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZRouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString completion:(void(^)(id))completion {
     NSURL *url = [NSURL URLWithString:urlString];
     return [self openURL:url withRetainIdentifier:nil completion:completion];
