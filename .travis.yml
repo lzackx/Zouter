@@ -1,14 +1,14 @@
 language: objective-c
 osx_image: xcode9
-podfile: ZRouterDemo/Podfile
+podfile: ZouterDemo/Podfile
 branches:
   only:
   - master
 env:
   global:
-    - WORKSPACE=ZRouterDemo.xcworkspace
-    - SDK_SCHEME=ZRouter
-    - DEMO_SCHEME=ZRouterDemo
+    - WORKSPACE=ZouterDemo.xcworkspace
+    - SDK_SCHEME=Zouter
+    - DEMO_SCHEME=ZouterDemo
     - IOS_SDK=iphonesimulator11.0
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 5s"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="YES"
@@ -16,7 +16,7 @@ env:
 before_install:
   - gem install cocoapods
   - pod repo update
-before_script: cd ZRouterDemo
+before_script: cd ZouterDemo
 script:
   - set -o pipefail
   - xcodebuild -version
@@ -33,5 +33,5 @@ script:
 
   # Run `pod lib lint` if specified
   - if [ $POD_LINT == "YES" ]; then
-      cd .. && pod lib lint --allow-warnings && cd ZRouterDemo;
+      cd .. && pod lib lint --allow-warnings && cd ZouterDemo;
     fi

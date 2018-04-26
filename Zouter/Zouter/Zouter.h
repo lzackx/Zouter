@@ -1,6 +1,6 @@
 //
-//  ZRouter.h
-//  ZRouter
+//  Zouter.h
+//  Zouter
 //
 //  Created by lzackx on 2018/4/20.
 //  Copyright © 2018年 lzackx. All rights reserved.
@@ -8,20 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for ZRouter.
-FOUNDATION_EXPORT double ZRouterVersionNumber;
+//! Project version number for Zouter.
+FOUNDATION_EXPORT double ZouterVersionNumber;
 
-//! Project version string for ZRouter.
-FOUNDATION_EXPORT const unsigned char ZRouterVersionString[];
+//! Project version string for Zouter.
+FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <ZRouter/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <Zouter/PublicHeader.h>
 
-typedef NS_OPTIONS(NSUInteger, ZRouterMode) {
-    ZRouterClassMode = 0,
-    ZRouterInstanceMode = 1,
+typedef NS_OPTIONS(NSUInteger, ZouterMode) {
+    ZouterClassMode = 0,
+    ZouterInstanceMode = 1,
 };
 
-@interface ZRouter : NSObject
+@interface Zouter : NSObject
 
 + (void)initializeWithScheme:(NSString *)scheme;
 + (instancetype)sharedInstance;

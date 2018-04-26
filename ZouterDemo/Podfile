@@ -2,6 +2,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-target :ZRouterDemo do
-    pod 'ZRouter', :git => 'https://github.com/lzackx/ZRouter.git'
+target :ZouterDemo do
+    pod 'Zouter', :git => 'https://github.com/lzackx/Zouter.git'
 end

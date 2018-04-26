@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73912592089866600E2011A /* ZRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912572089866600E2011A /* ZRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A73912622089870500E2011A /* ZRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A739125F2089870500E2011A /* ZRouter.m */; };
-		A73912632089870500E2011A /* ZRouterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912602089870500E2011A /* ZRouterPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A73912592089866600E2011A /* Zouter.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912572089866600E2011A /* Zouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73912622089870500E2011A /* Zouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A739125F2089870500E2011A /* Zouter.m */; };
+		A73912632089870500E2011A /* ZouterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912602089870500E2011A /* ZouterPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A73912542089866600E2011A /* ZRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A73912572089866600E2011A /* ZRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRouter.h; sourceTree = "<group>"; };
+		A73912542089866600E2011A /* Zouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73912572089866600E2011A /* Zouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zouter.h; sourceTree = "<group>"; };
 		A73912582089866600E2011A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A739125F2089870500E2011A /* ZRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRouter.m; sourceTree = "<group>"; };
-		A73912602089870500E2011A /* ZRouterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRouterPrivate.h; sourceTree = "<group>"; };
+		A739125F2089870500E2011A /* Zouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zouter.m; sourceTree = "<group>"; };
+		A73912602089870500E2011A /* ZouterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZouterPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +34,7 @@
 		A739124A2089866600E2011A = {
 			isa = PBXGroup;
 			children = (
-				A73912562089866600E2011A /* ZRouter */,
+				A73912562089866600E2011A /* Zouter */,
 				A73912552089866600E2011A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,20 +42,20 @@
 		A73912552089866600E2011A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A73912542089866600E2011A /* ZRouter.framework */,
+				A73912542089866600E2011A /* Zouter.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A73912562089866600E2011A /* ZRouter */ = {
+		A73912562089866600E2011A /* Zouter */ = {
 			isa = PBXGroup;
 			children = (
-				A73912572089866600E2011A /* ZRouter.h */,
+				A73912572089866600E2011A /* Zouter.h */,
 				A73912582089866600E2011A /* Info.plist */,
-				A73912602089870500E2011A /* ZRouterPrivate.h */,
-				A739125F2089870500E2011A /* ZRouter.m */,
+				A73912602089870500E2011A /* ZouterPrivate.h */,
+				A739125F2089870500E2011A /* Zouter.m */,
 			);
-			path = ZRouter;
+			path = Zouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,17 +65,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73912592089866600E2011A /* ZRouter.h in Headers */,
-				A73912632089870500E2011A /* ZRouterPrivate.h in Headers */,
+				A73912592089866600E2011A /* Zouter.h in Headers */,
+				A73912632089870500E2011A /* ZouterPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A73912532089866600E2011A /* ZRouter */ = {
+		A73912532089866600E2011A /* Zouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A739125C2089866600E2011A /* Build configuration list for PBXNativeTarget "ZRouter" */;
+			buildConfigurationList = A739125C2089866600E2011A /* Build configuration list for PBXNativeTarget "Zouter" */;
 			buildPhases = (
 				A739124F2089866600E2011A /* Sources */,
 				A73912502089866600E2011A /* Frameworks */,
@@ -86,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = ZRouter;
-			productName = ZRouter;
-			productReference = A73912542089866600E2011A /* ZRouter.framework */;
+			name = Zouter;
+			productName = Zouter;
+			productReference = A73912542089866600E2011A /* Zouter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A739124E2089866600E2011A /* Build configuration list for PBXProject "ZRouter" */;
+			buildConfigurationList = A739124E2089866600E2011A /* Build configuration list for PBXProject "Zouter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A73912532089866600E2011A /* ZRouter */,
+				A73912532089866600E2011A /* Zouter */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73912622089870500E2011A /* ZRouter.m in Sources */,
+				A73912622089870500E2011A /* Zouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,14 +269,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZRouter/Info.plist;
+				INFOPLIST_FILE = Zouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzackx.ZRouter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzackx.Zouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,14 +292,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZRouter/Info.plist;
+				INFOPLIST_FILE = Zouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzackx.ZRouter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzackx.Zouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A739124E2089866600E2011A /* Build configuration list for PBXProject "ZRouter" */ = {
+		A739124E2089866600E2011A /* Build configuration list for PBXProject "Zouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A739125A2089866600E2011A /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A739125C2089866600E2011A /* Build configuration list for PBXNativeTarget "ZRouter" */ = {
+		A739125C2089866600E2011A /* Build configuration list for PBXNativeTarget "Zouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A739125D2089866600E2011A /* Debug */,

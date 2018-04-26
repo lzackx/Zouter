@@ -1,20 +1,20 @@
 //
-//  ZRouter.m
-//  ZRouter
+//  Zouter.m
+//  Zouter
 //
 //  Created by lzackx on 2018/4/16.
 //  Copyright © 2018年 lzackx. All rights reserved.
 //
 
-#import "ZRouter.h"
+#import "Zouter.h"
 #import <UIKit/UIKit.h>
 #import <objc/objc.h>
 #import <objc/runtime.h>
-#import "ZRouterPrivate.h"
+#import "ZouterPrivate.h"
 
-@implementation ZRouter
+@implementation Zouter
 
-static const void *ZRouterIdentifier = "ZRouterIdentifier";
+static const void *ZouterIdentifier = "ZouterIdentifier";
 
 // MARK: Constructor
 static id instance = nil;
@@ -24,7 +24,7 @@ static id instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (instance == nil) {
-            instance = [[ZRouter alloc] initWithScheme: scheme];
+            instance = [[Zouter alloc] initWithScheme: scheme];
         }
     });
 }
@@ -36,9 +36,9 @@ static id instance = nil;
             NSDictionary *infoDictionary = [NSBundle mainBundle].infoDictionary;
             NSString *scheme = infoDictionary[@"CFBundleName"];
             if (scheme != nil || [scheme stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0) {
-                instance = [[ZRouter alloc] initWithScheme: [scheme lowercaseString]];
+                instance = [[Zouter alloc] initWithScheme: [scheme lowercaseString]];
             } else {
-                NSAssert(NO, @"ZRouter has not been initialized or CFBundleName has not been set as the default scheme of ZRouter");
+                NSAssert(NO, @"Zouter has not been initialized or CFBundleName has not been set as the default scheme of Zouter");
             }
         }
     }
@@ -85,7 +85,7 @@ static id instance = nil;
     return parameters;
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURL:(NSURL *)url withRetainIdentifier:(NSString *)retainIdentifier completion:(void(^)(id))completion {
     
     id result = nil;
@@ -109,10 +109,10 @@ static id instance = nil;
     // mode
     NSUInteger mode = [url.port unsignedIntegerValue];
     switch (mode) {
-        case ZRouterClassMode:
+        case ZouterClassMode:
             result = [self performClassMethodName:methodName ofClassName:className withParameters:parameters];
             break;
-        case ZRouterInstanceMode:
+        case ZouterInstanceMode:
             result = [self performInstanceMethodName:methodName ofClassName:className withParameters:parameters withRetainIdentifier:(NSString *)retainIdentifier];
             break;
         default:
@@ -125,28 +125,28 @@ static id instance = nil;
     return result;
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURL:(NSURL *)url withRetainIdentifier:(NSString *)retainIdentifier {
     return [self openURL:url withRetainIdentifier:retainIdentifier completion:nil];
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURL:(NSURL *)url completion:(void(^)(id))completion {
     return [self openURL:url withRetainIdentifier:nil completion:completion];
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier completion:(void(^)(id))completion {
     NSURL *url = [NSURL URLWithString:urlString];
     return [self openURL:url withRetainIdentifier:retainIdentifier completion:completion];
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier {
     return [self openURLString:urlString withRetainIdentifier:retainIdentifier completion:nil];
 }
 
-/// URL Format: scheme://class:ZRouterMode/method?keys=values
+/// URL Format: scheme://class:ZouterMode/method?keys=values
 - (id)openURLString:(NSString *)urlString completion:(void(^)(id))completion {
     NSURL *url = [NSURL URLWithString:urlString];
     return [self openURL:url withRetainIdentifier:nil completion:completion];
@@ -197,7 +197,7 @@ static id instance = nil;
     }
     if (identifier && self.classObjects[identifier] == nil) {
         [self.classObjects setObject:object forKey:identifier];
-        objc_setAssociatedObject(object, ZRouterIdentifier, identifier, OBJC_ASSOCIATION_RETAIN);
+        objc_setAssociatedObject(object, ZouterIdentifier, identifier, OBJC_ASSOCIATION_RETAIN);
     }
     
 #pragma clang diagnostic push

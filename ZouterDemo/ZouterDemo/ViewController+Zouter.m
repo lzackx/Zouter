@@ -1,16 +1,16 @@
 //
-//  ViewController+ZRouter.m
-//  ZRouterDemo
+//  ViewController+Zouter.m
+//  ZouterDemo
 //
 //  Created by lzackx on 2018/4/25.
 //  Copyright © 2018年 lzackx. All rights reserved.
 //
 
-#import "ViewController+ZRouter.h"
+#import "ViewController+Zouter.h"
 
-@implementation ViewController (ZRouter)
+@implementation ViewController (Zouter)
 
-+ (NSNumber *)zrTestZRouterClasseMethodWithParameters:(NSDictionary *)parameters {
++ (NSNumber *)zrTestZouterClasseMethodWithParameters:(NSDictionary *)parameters {
     
     NSNumber *hasParameters = @NO;
     if ([parameters count] > 0) {
@@ -23,7 +23,7 @@
     return hasParameters;
 }
 
-- (NSNumber *)zrTestZRouterInstanceMethodWithParameters:(NSDictionary *)parameters {
+- (NSNumber *)zrTestZouterInstanceMethodWithParameters:(NSDictionary *)parameters {
     
     NSNumber *hasParameters = @NO;
     if ([parameters count] > 0) {

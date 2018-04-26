@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ZRouterDemo/ZRouterDemo.xcodeproj">
+      location = "group:ZouterDemo/ZouterDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ZRouter/ZRouter.xcodeproj">
+      location = "group:Zouter/Zouter.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  ZRouterDemo
+//  ZouterDemo
 //
 //  Created by lzackx on 2018/4/20.
 //  Copyright © 2018年 lzackx. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <ZRouter/ZRouter.h>
+#import <Zouter/Zouter.h>
 
 @interface AppDelegate ()
 
@@ -19,12 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[ZRouter sharedInstance] openURLString:@"ZRouterDemo://ViewController:0/zrTestZRouterClasseMethodWithParameters:?a=1&b=2"
+    [[Zouter sharedInstance] openURLString:@"ZouterDemo://ViewController:0/zrTestZouterClasseMethodWithParameters:?a=1&b=2"
                                  completion:^(NSNumber *result) {
                                      NSLog([result boolValue] ? @"YES": @"NO");
                                  }];
     
-    [[ZRouter sharedInstance] openURLString:@"ZRouterDemo://ViewController:1/zrTestZRouterInstanceMethodWithParameters:?a=1&b=2"
+    [[Zouter sharedInstance] openURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?a=1&b=2"
                        withRetainIdentifier:@"test"
                                  completion:^(NSNumber *result) {
                                      NSLog([result boolValue] ? @"YES": @"NO");

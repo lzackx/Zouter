@@ -1,15 +1,15 @@
 //
-//  ZRouterPrivate.h
-//  ZRouter
+//  ZouterPrivate.h
+//  Zouter
 //
 //  Created by lzackx on 2018/4/16.
 //  Copyright © 2018年 lzackx. All rights reserved.
 //
 
-#ifndef ZRouterManagerPrivate_h
-#define ZRouterManagerPrivate_h
+#ifndef ZouterManagerPrivate_h
+#define ZouterManagerPrivate_h
 
-@interface ZRouter ()
+@interface Zouter ()
 
 @property (nonatomic, readonly, strong)NSString *scheme;
 @property (nonatomic, strong)NSMutableDictionary *classObjects;
@@ -19,4 +19,4 @@
 
 @end
 
-#endif /* ZRouterPrivate_h */
+#endif /* ZouterPrivate_h */
