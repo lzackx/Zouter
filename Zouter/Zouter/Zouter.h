@@ -33,6 +33,7 @@ typedef NS_OPTIONS(NSUInteger, ZouterMode) {
 - (id)openURLString:(NSString * _Nonnull)urlString withRetainIdentifier:(NSString * _Nullable)retainIdentifier;
 - (id)openURLString:(NSString * _Nonnull)urlString completion:(void(^_Nullable)(id))completion;
 
+- (id)objectOfClassName:(NSString * _Nonnull)className retainIdentifier:(NSString * _Nonnull)retainIdentifier;
 - (void)releaseObjectOfClassName:(NSString * _Nonnull)className retainIdentifier:(NSString * _Nonnull)retainIdentifier;
 
 @end

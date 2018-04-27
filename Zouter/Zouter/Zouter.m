@@ -14,8 +14,6 @@
 
 @implementation Zouter
 
-static const void *ZouterIdentifier = "ZouterIdentifier";
-
 // MARK: Constructor
 static id instance = nil;
 
@@ -174,6 +172,7 @@ static id instance = nil;
     
     return result;
 }
+
 /// Instance Method
 - (id)performInstanceMethodName:(NSString *)methodName ofClassName:(NSString *)className withParameters:(NSDictionary *)parameters withRetainIdentifier:(NSString *)retainIdentifier {
     
@@ -196,7 +195,6 @@ static id instance = nil;
     }
     if (identifier && self.classObjects[identifier] == nil) {
         [self.classObjects setObject:object forKey:identifier];
-        objc_setAssociatedObject(object, ZouterIdentifier, identifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
 #pragma clang diagnostic push
@@ -216,6 +214,12 @@ static id instance = nil;
     NSData *encodingData = [[NSString stringWithFormat:@"%@:%@", className, retainIdentifier] dataUsingEncoding:NSUTF8StringEncoding];
     NSString *identifier = [encodingData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
     return identifier;
+}
+
+- (id)objectOfClassName:(NSString *)className retainIdentifier:(NSString *)retainIdentifier {
+
+    NSString *identifier = [self identifierOfClassName:className retainIdentifier:retainIdentifier];
+    return [self.classObjects objectForKey:identifier];
 }
 
 - (void)releaseObjectOfClassName:(NSString *)className retainIdentifier:(NSString *)retainIdentifier {
