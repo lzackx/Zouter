@@ -182,8 +182,7 @@ static id instance = nil;
     NSObject *object = nil;
     NSString *identifier = nil;
     if (retainIdentifier) {
-        NSData *encodingData = [[NSString stringWithFormat:@"%@:%@", className, retainIdentifier] dataUsingEncoding:NSUTF8StringEncoding];
-        identifier = [encodingData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+        identifier = [self identifierOfClassName:className retainIdentifier:retainIdentifier];
     }
     if (identifier) {
         object = self.classObjects[identifier];
@@ -197,7 +196,7 @@ static id instance = nil;
     }
     if (identifier && self.classObjects[identifier] == nil) {
         [self.classObjects setObject:object forKey:identifier];
-        objc_setAssociatedObject(object, ZouterIdentifier, identifier, OBJC_ASSOCIATION_RETAIN);
+        objc_setAssociatedObject(object, ZouterIdentifier, identifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
 #pragma clang diagnostic push
@@ -210,6 +209,19 @@ static id instance = nil;
 #pragma clang diagnostic pop
     
     return result;
+}
+
+- (NSString *)identifierOfClassName:(NSString *)className retainIdentifier:(NSString *)retainIdentifier {
+    
+    NSData *encodingData = [[NSString stringWithFormat:@"%@:%@", className, retainIdentifier] dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *identifier = [encodingData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    return identifier;
+}
+
+- (void)releaseObjectOfClassName:(NSString *)className retainIdentifier:(NSString *)retainIdentifier {
+    
+    NSString *identifier = [self identifierOfClassName:className retainIdentifier:retainIdentifier];
+    [self.classObjects removeObjectForKey:identifier];
 }
 
 @end

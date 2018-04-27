@@ -26,11 +26,13 @@ typedef NS_OPTIONS(NSUInteger, ZouterMode) {
 + (void)initializeWithScheme:(NSString *)scheme;
 + (instancetype)sharedInstance;
 
-- (id)openURL:(NSURL *)url withRetainIdentifier:(NSString *)retainIdentifier completion:(void(^)(id))completion;
-- (id)openURL:(NSURL *)url withRetainIdentifier:(NSString *)retainIdentifier;
-- (id)openURL:(NSString *)url completion:(void(^)(id))completion;
-- (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier completion:(void(^)(id))completion;
-- (id)openURLString:(NSString *)urlString withRetainIdentifier:(NSString *)retainIdentifier;
-- (id)openURLString:(NSString *)urlString completion:(void(^)(id))completion;
+- (id)openURL:(NSURL * _Nonnull)url withRetainIdentifier:(NSString * _Nullable)retainIdentifier completion:( void(^ _Nullable)(id))completion;
+- (id)openURL:(NSURL * _Nonnull)url withRetainIdentifier:(NSString * _Nullable)retainIdentifier;
+- (id)openURL:(NSString * _Nonnull)url completion:(void(^_Nullable)(id))completion;
+- (id)openURLString:(NSString * _Nonnull)urlString withRetainIdentifier:(NSString * _Nullable)retainIdentifier completion:(void(^_Nullable)(id))completion;
+- (id)openURLString:(NSString * _Nonnull)urlString withRetainIdentifier:(NSString * _Nullable)retainIdentifier;
+- (id)openURLString:(NSString * _Nonnull)urlString completion:(void(^_Nullable)(id))completion;
+
+- (void)releaseObjectOfClassName:(NSString * _Nonnull)className retainIdentifier:(NSString * _Nonnull)retainIdentifier;
 
 @end
