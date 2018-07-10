@@ -16,24 +16,14 @@ FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Zouter/PublicHeader.h>
 
-typedef NS_OPTIONS(NSUInteger, ZouterMode) {
-    ZouterClassMode = 0,
-    ZouterInstanceMode = 1,
-};
 
 @interface Zouter : NSObject
 
 + (void)initializeWithScheme:(NSString *)scheme;
-+ (instancetype)sharedInstance;
++ (instancetype)sharedRouter;
 
-- (id)openURL:(NSURL * _Nonnull)url withRetainIdentifier:(NSString * _Nullable)retainIdentifier completion:( void(^ _Nullable)(id))completion;
-- (id)openURL:(NSURL * _Nonnull)url withRetainIdentifier:(NSString * _Nullable)retainIdentifier;
-- (id)openURL:(NSString * _Nonnull)url completion:(void(^_Nullable)(id))completion;
-- (id)openURLString:(NSString * _Nonnull)urlString withRetainIdentifier:(NSString * _Nullable)retainIdentifier completion:(void(^_Nullable)(id))completion;
-- (id)openURLString:(NSString * _Nonnull)urlString withRetainIdentifier:(NSString * _Nullable)retainIdentifier;
-- (id)openURLString:(NSString * _Nonnull)urlString completion:(void(^_Nullable)(id))completion;
+- (void)openURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion;
+- (void)openURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion;
 
-- (id)objectOfClassName:(NSString * _Nonnull)className retainIdentifier:(NSString * _Nonnull)retainIdentifier;
-- (void)releaseObjectOfClassName:(NSString * _Nonnull)className retainIdentifier:(NSString * _Nonnull)retainIdentifier;
 
 @end

@@ -19,15 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[Zouter sharedInstance] openURLString:@"ZouterDemo://ViewController:0/zrTestZouterClasseMethodWithParameters:?a=1&b=2"
-                                 completion:^(NSNumber *result) {
-                                     NSLog([result boolValue] ? @"YES": @"NO");
+    [[Zouter sharedRouter] openURLString:@"ZouterDemo://ViewController/zrTestZouterClasseMethodWithParameters:?a=1&b=2"
+                                 completion:^() {
+                                     NSLog(@"class");
                                  }];
     
-    [[Zouter sharedInstance] openURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?a=1&b=2"
-                       withRetainIdentifier:@"test"
-                                 completion:^(NSNumber *result) {
-                                     NSLog([result boolValue] ? @"YES": @"NO");
+    [[Zouter sharedRouter] openURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?2=a"
+                                 completion:^() {
+                                     NSLog(@"instance");
                                  }];
     
     return YES;

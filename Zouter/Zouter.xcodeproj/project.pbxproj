@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7118DD220F2EE24005AA0DC /* ZouterCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = A7118DD020F2EE24005AA0DC /* ZouterCommand.h */; };
+		A7118DD320F2EE24005AA0DC /* ZouterCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A7118DD120F2EE24005AA0DC /* ZouterCommand.m */; };
+		A7118DD620F2EE3A005AA0DC /* ZouterParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A7118DD420F2EE3A005AA0DC /* ZouterParser.h */; };
+		A7118DD720F2EE3A005AA0DC /* ZouterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A7118DD520F2EE3A005AA0DC /* ZouterParser.m */; };
 		A73912592089866600E2011A /* Zouter.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912572089866600E2011A /* Zouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A73912622089870500E2011A /* Zouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A739125F2089870500E2011A /* Zouter.m */; };
 		A73912632089870500E2011A /* ZouterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A73912602089870500E2011A /* ZouterPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A75E619C20F3129400409D6D /* ZouterExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = A75E619A20F3129400409D6D /* ZouterExecutor.h */; };
+		A75E619D20F3129400409D6D /* ZouterExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E619B20F3129400409D6D /* ZouterExecutor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7118DD020F2EE24005AA0DC /* ZouterCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZouterCommand.h; sourceTree = "<group>"; };
+		A7118DD120F2EE24005AA0DC /* ZouterCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZouterCommand.m; sourceTree = "<group>"; };
+		A7118DD420F2EE3A005AA0DC /* ZouterParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZouterParser.h; sourceTree = "<group>"; };
+		A7118DD520F2EE3A005AA0DC /* ZouterParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZouterParser.m; sourceTree = "<group>"; };
 		A73912542089866600E2011A /* Zouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73912572089866600E2011A /* Zouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zouter.h; sourceTree = "<group>"; };
 		A73912582089866600E2011A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A739125F2089870500E2011A /* Zouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zouter.m; sourceTree = "<group>"; };
 		A73912602089870500E2011A /* ZouterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZouterPrivate.h; sourceTree = "<group>"; };
+		A75E619A20F3129400409D6D /* ZouterExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZouterExecutor.h; sourceTree = "<group>"; };
+		A75E619B20F3129400409D6D /* ZouterExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZouterExecutor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 				A73912582089866600E2011A /* Info.plist */,
 				A73912602089870500E2011A /* ZouterPrivate.h */,
 				A739125F2089870500E2011A /* Zouter.m */,
+				A75E619A20F3129400409D6D /* ZouterExecutor.h */,
+				A75E619B20F3129400409D6D /* ZouterExecutor.m */,
+				A7118DD020F2EE24005AA0DC /* ZouterCommand.h */,
+				A7118DD120F2EE24005AA0DC /* ZouterCommand.m */,
+				A7118DD420F2EE3A005AA0DC /* ZouterParser.h */,
+				A7118DD520F2EE3A005AA0DC /* ZouterParser.m */,
 			);
 			path = Zouter;
 			sourceTree = "<group>";
@@ -65,8 +83,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75E619C20F3129400409D6D /* ZouterExecutor.h in Headers */,
 				A73912592089866600E2011A /* Zouter.h in Headers */,
 				A73912632089870500E2011A /* ZouterPrivate.h in Headers */,
+				A7118DD620F2EE3A005AA0DC /* ZouterParser.h in Headers */,
+				A7118DD220F2EE24005AA0DC /* ZouterCommand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75E619D20F3129400409D6D /* ZouterExecutor.m in Sources */,
+				A7118DD720F2EE3A005AA0DC /* ZouterParser.m in Sources */,
+				A7118DD320F2EE24005AA0DC /* ZouterCommand.m in Sources */,
 				A73912622089870500E2011A /* Zouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

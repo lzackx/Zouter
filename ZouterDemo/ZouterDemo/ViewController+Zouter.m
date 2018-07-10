@@ -10,7 +10,7 @@
 
 @implementation ViewController (Zouter)
 
-+ (NSNumber *)zrTestZouterClasseMethodWithParameters:(NSDictionary *)parameters {
++ (void)zrTestZouterClasseMethodWithParameters:(NSDictionary *)parameters {
     
     NSNumber *hasParameters = @NO;
     if ([parameters count] > 0) {
@@ -19,21 +19,15 @@
     } else {
         NSLog(@"No parameters");
     }
-    
-    return hasParameters;
 }
 
-- (NSNumber *)zrTestZouterInstanceMethodWithParameters:(NSDictionary *)parameters {
+- (void)zrTestZouterInstanceMethodWithParameters:(NSString *)parameter {
     
-    NSNumber *hasParameters = @NO;
-    if ([parameters count] > 0) {
-        hasParameters = @YES;
-        NSLog(@"%@", parameters);
+    if (parameter) {
+        NSLog(@"%@", parameter);
     } else {
         NSLog(@"No parameters");
     }
-    
-    return hasParameters;
 }
 
 @end

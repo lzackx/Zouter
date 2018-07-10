@@ -9,13 +9,14 @@
 #ifndef ZouterManagerPrivate_h
 #define ZouterManagerPrivate_h
 
+#import "ZouterParser.h"
+#import "ZouterExecutor.h"
+
 @interface Zouter ()
 
-@property (nonatomic, readonly, strong)NSString *scheme;
-@property (nonatomic, strong)NSMutableDictionary *classObjects;
-
-- (id)performClassMethodName:(NSString *)methodName ofClassName:(NSString *)className withParameters:(NSDictionary *)parameters;
-- (id)performInstanceMethodName:(NSString *)methodName ofClassName:(NSString *)className withParameters:(NSDictionary *)parameters withRetainIdentifier:(NSString *)retainIdentifier;
+@property (nonatomic, readonly, strong) NSString *scheme;
+@property (nonatomic, readwrite, strong) ZouterParser *parser;
+@property (nonatomic, readwrite, strong) ZouterExecutor *executor;
 
 @end
 
