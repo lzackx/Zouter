@@ -19,15 +19,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[Zouter sharedRouter] openURLString:@"ZouterDemo://ViewController/zrTestZouterClasseMethodWithParameters:?a=1&b=2"
-                                 completion:^() {
-                                     NSLog(@"class");
-                                 }];
+    Zouter *router = [Zouter sharedRouter];
     
-    [[Zouter sharedRouter] openURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?2=a"
-                                 completion:^() {
-                                     NSLog(@"instance");
-                                 }];
+    [router openURLString:@"ZouterDemo://ViewController/zrTestZouterClasseMethodWithParameters:?a=1&b=2"
+               completion:^() {
+                   NSLog(@"class");
+               }];
+
+    [router openURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?2=a"
+               completion:^() {
+                   NSLog(@"instance");
+               }];
+    
+    [router openInSync:YES withURLString:@"ZouterDemo://ViewController/zrTestZouterClasseMethodWithParameters:?2=b&&3=c"
+            completion:^{
+                NSLog(@"Sync class");
+            }];
+    [router openInSync:YES withURLString:@"ZouterDemo://ViewController:1/zrTestZouterInstanceMethodWithParameters:?2=a"
+            completion:^{
+                NSLog(@"Sync instance");
+            }];
+    
     
     return YES;
 }

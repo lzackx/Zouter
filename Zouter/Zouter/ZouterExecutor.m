@@ -31,7 +31,7 @@ static NSMutableDictionary *objects = nil;
     return self;
 }
 
-- (void)executeCommand:(ZouterCommand *)command completion:(void(^)(void))completion  {
+- (void)executeInSync:(BOOL)sync withCommand:(ZouterCommand *)command completion:(void(^)(void))completion {
     
     NSOperation *operation = nil;
     if ([command.identifier integerValue] >= 0) {
@@ -41,7 +41,7 @@ static NSMutableDictionary *objects = nil;
     }
     if (operation) {
         if (completion) {
-            // if command is going to call instance method, the instance should release itself
+            // if the command is going to invoke instance method, the executor should release instance object after all.
             if ([command.identifier integerValue] >= 0) {
                 void (^instanceCompletion)(void) = ^() {
                     if (completion) {
@@ -56,7 +56,11 @@ static NSMutableDictionary *objects = nil;
                 [operation setCompletionBlock:completion];
             }
         }
-        [self.operationQueue addOperation:operation];
+        if (sync) {
+            [operation start];
+        } else {
+            [self.operationQueue addOperation:operation];
+        }
     }
 }
 

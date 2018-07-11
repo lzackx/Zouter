@@ -24,6 +24,8 @@ FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 
 - (void)openURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion;
 - (void)openURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion;
+- (void)openInSync:(BOOL)sync withURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion;
+- (void)openInSync:(BOOL)sync withURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion;
 
 
 @end

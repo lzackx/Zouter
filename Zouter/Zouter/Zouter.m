@@ -67,6 +67,14 @@ static id zouter = nil;
 
 // MARK: Open URL
 - (void)openURL:(NSURL *)url completion:(void(^)(void))completion {
+    [self openInSync:NO withURL:url completion:completion];
+}
+
+- (void)openURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion {
+    [self openInSync:NO withURLString:urlString completion:completion];
+}
+
+- (void)openInSync:(BOOL)sync withURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion {
     
     // scheme
     NSString *scheme = [url.scheme lowercaseString];
@@ -74,12 +82,16 @@ static id zouter = nil;
         return;
     }
     ZouterCommand *command = [self.parser parseCommand:url];
-    [self.executor executeCommand:command completion:completion];
+    [self.executor executeInSync:sync withCommand:command completion:completion];
 }
 
-- (void)openURLString:(NSString *)urlString completion:(void(^)(void))completion  {
+- (void)openInSync:(BOOL)sync withURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion  {
     NSURL *url = [[NSURL alloc] initWithString:urlString];
-    [self openURL:url completion:completion];
+    if (!url) {
+        NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, urlString);
+        return;
+    }
+    [self openInSync:(BOOL)sync withURL:url completion:completion];
 }
 
 @end

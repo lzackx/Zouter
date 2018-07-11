@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZouterExecutor : NSObject
 
 - (instancetype)init;
-- (void)executeCommand:(ZouterCommand *)command completion:(void(^)(void))completion;
+
+- (void)executeInSync:(BOOL)sync withCommand:(ZouterCommand *)command completion:(void(^)(void))completion;
 
 + (NSOperation *)classOperationForCommand:(ZouterCommand *)command;
 + (NSOperation *)instanceOperationForCommand:(ZouterCommand *)command;
