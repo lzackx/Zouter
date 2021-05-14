@@ -15,10 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init;
 
-- (void)executeInSync:(BOOL)sync withCommand:(ZouterCommand *)command completion:(void(^)(void))completion;
-
-+ (NSOperation *)classOperationForCommand:(ZouterCommand *)command;
-+ (NSOperation *)instanceOperationForCommand:(ZouterCommand *)command;
+- (void)executeCommand:(ZouterCommand *)command;
 
 @end
 

@@ -7,14 +7,18 @@
 //
 
 #import "Zouter.h"
-#import <UIKit/UIKit.h>
-#import <objc/objc.h>
-#import <objc/runtime.h>
+//#import <UIKit/UIKit.h>
+//#import <objc/objc.h>
+//#import <objc/runtime.h>
 #import "ZouterPrivate.h"
+
+@interface Zouter () <ZouterParserDelegate>
+
+@end
 
 @implementation Zouter
 
-// MARK: Constructor
+// MARK: - Constructor
 static id zouter = nil;
 
 + (void)initializeWithScheme:(NSString *)scheme {
@@ -47,8 +51,9 @@ static id zouter = nil;
     
     self = [super init];
     if (self) {
-        _scheme = scheme;
+        _scheme = [scheme lowercaseString];
         _parser = [[ZouterParser alloc] init];
+		_parser.delegate = self;
         _executor = [[ZouterExecutor alloc] init];
     }
     return self;
@@ -65,33 +70,42 @@ static id zouter = nil;
     return zouter;
 }
 
-// MARK: Open URL
-- (void)openURL:(NSURL *)url completion:(void(^)(void))completion {
-    [self openInSync:NO withURL:url completion:completion];
+// MARK: - Registration
+- (void)registerWithPattern:(NSString *)pattern
+			targetActionURL:(NSString *)targetActionURL
+			   synchronizly:(BOOL)synchronizly
+				 willExcute:(ZouterCommandCallback)willExcute
+				  didExcute:(ZouterCommandCallback)didExcute {
+	
+	ZouterCommand *command = [ZouterCommand new];
+	command.taURL = targetActionURL;
+	command.synchronizly = synchronizly;
+	command.willExcute = willExcute;
+	command.didExcute = didExcute;
+	[self.routers setObject:command forKey:pattern];
 }
 
-- (void)openURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion {
-    [self openInSync:NO withURLString:urlString completion:completion];
+// MARK: - Perform URL
+- (void)performURLString:(NSString * _Nullable)urlString {
+	NSURL *url = [[NSURL alloc] initWithString:urlString];
+	if (!url) {
+		NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, urlString);
+		return;
+	}
+	[self performURL:url];
 }
 
-- (void)openInSync:(BOOL)sync withURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion {
-    
-    // scheme
-    NSString *scheme = [url.scheme lowercaseString];
-    if (![self.scheme isEqualToString:scheme]) {
-        return;
-    }
-    ZouterCommand *command = [self.parser parseCommand:url];
-    [self.executor executeInSync:sync withCommand:command completion:completion];
+- (void)performURL:(NSURL * _Nullable)url {
+	if (!url) {
+		NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, url);
+		return;
+	}
+	[self.parser parseURL:url fromRouters:[self.routers copy]];
 }
 
-- (void)openInSync:(BOOL)sync withURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion  {
-    NSURL *url = [[NSURL alloc] initWithString:urlString];
-    if (!url) {
-        NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, urlString);
-        return;
-    }
-    [self openInSync:(BOOL)sync withURL:url completion:completion];
+// MARK: - ZouterParserDelegate
+- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command {
+	[self.executor executeCommand:command];
 }
 
 @end

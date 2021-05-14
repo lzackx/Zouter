@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZouterCommand.h"
-
+#import "ZouterParserDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZouterParser : NSObject
 
-- (instancetype)init;
-- (ZouterCommand *)parseCommand:(NSURL *)command;
+@property (nonatomic, readwrite, weak) id<ZouterParserDelegate> delegate;
+
+- (void)parseURL:(NSURL *)url fromRouters:(NSDictionary *)routers;
 
 @end
 

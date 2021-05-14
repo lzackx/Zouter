@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9
+osx_image: xcode12
 podfile: ZouterDemo/Podfile
 branches:
   only:
@@ -9,7 +9,7 @@ env:
     - WORKSPACE=ZouterDemo.xcworkspace
     - SDK_SCHEME=Zouter
     - DEMO_SCHEME=ZouterDemo
-    - IOS_SDK=iphonesimulator11.0
+    - IOS_SDK=iphonesimulator8.0
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 5s"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="YES"
     - DESTINATION="platform=iOS Simulator,OS=11.0,name=iPhone X"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="NO"

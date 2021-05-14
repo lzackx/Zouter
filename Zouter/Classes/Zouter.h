@@ -19,13 +19,17 @@ FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 
 @interface Zouter : NSObject
 
-+ (void)initializeWithScheme:(NSString *)scheme;
-+ (instancetype)sharedRouter;
++ (void)initializeWithScheme:(NSString *_Nonnull)scheme;
++ (instancetype _Nonnull )sharedRouter;
 
-- (void)openURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion;
-- (void)openURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion;
-- (void)openInSync:(BOOL)sync withURL:(NSURL * _Nonnull)url completion:(void(^)(void))completion;
-- (void)openInSync:(BOOL)sync withURLString:(NSString * _Nonnull)urlString completion:(void(^)(void))completion;
+// targetActionURL: scheme://[target]/[action]?[params]
+- (void)registerWithPattern:(NSString *_Nonnull)pattern
+			targetActionURL:(NSString *_Nonnull)targetActionURL
+			   synchronizly:(BOOL)synchronizly
+				 willExcute:(void(^_Nullable)(void))willExcute
+				  didExcute:(void(^_Nullable)(void))didExcute;
 
+- (void)performURLString:(NSString * _Nullable)urlString;
+- (void)performURL:(NSURL * _Nullable)url;
 
 @end
