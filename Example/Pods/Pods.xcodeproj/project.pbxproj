@@ -1,0 +1,1236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0666EC1BD729F9CAC061DCF53D84891D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */; };
+		19E66FD797229CA766143DE2AF24A5DB /* ZouterExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CB62F90227C6AAD79A50EC1D335C62 /* ZouterExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A39C583A8D9432468B31822B08709AC /* ZKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E536D5868BFCC557D5DAE71F0E463BA9 /* ZKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9387FA7840082358E4158BEA5487CA /* Zouter.h in Headers */ = {isa = PBXBuildFile; fileRef = F03CCA724D2F46CF3BFBC688183B38AD /* Zouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B94BEF000168E07EAC82C7A25A21458 /* CTMediator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2962A5C7B087BA897D03E4F5260F28E4 /* CTMediator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DF3F8BA54CE846068014348DA1586B5 /* Pods-Zouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C22DE5B0E9664F88E79EBBD1E781F2E /* Pods-Zouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4731D4CB78576EAD3C461B2602EEF905 /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E18FD3A6B257D3AA4E2A0727285FC16 /* CTMediator.m */; };
+		4A4A347A09EE4DDDD67F21EDCD645699 /* Zouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DDAA0A165B43BF28EE621F2CC3D524 /* Zouter-dummy.m */; };
+		4F58E17DAF09A3035A146DDDDFEFE84B /* CTMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 36785C50DA89F58775018A8877B98F34 /* CTMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D858CC6961E3E125CBE1C964412B303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */; };
+		6850B266D6B3004CE595D0D244BD0561 /* Pods-Zouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E95F120B31D984AC4AEB655908E7C0 /* Pods-Zouter_Tests-dummy.m */; };
+		6973072BD1EB4BAB1C0BD5B87111DB9D /* ZKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 281064968045219B64E820B25EF41AF8 /* ZKit-dummy.m */; };
+		69B61193218731833D94A63CD9010166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */; };
+		6A3A726BA37ACDC43642F29A8E1B60BA /* CTMediator+HandyTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6216CC2DD003471054C9D245C9C212 /* CTMediator+HandyTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F27C88B1C18A25BBF9698571C4CC28 /* Zouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0775BCB086DD58A97D1F804B377BEE8C /* Zouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		792DDF7FCEEA48F5D908366AC06CB13F /* ZouterCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E2F8017CA9C7A4661360395E38EF98 /* ZouterCommand.m */; };
+		7A3DF82AB16D75407B97998C86061128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */; };
+		7F3CD06F2FD4787D5431642F668C76B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDEFCDB386FFEB312789E6756102453 /* UIKit.framework */; };
+		7F6DE10E33BD76C9B226D73463E9AA8B /* CTMediator+HandyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C35027B02EF98904315138DEB8C687D4 /* CTMediator+HandyTools.m */; };
+		7FDEE6EA86CBCC24D94D39234F555B20 /* Pods-Zouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37025AE191CB93052BB7D4A4EEC4A9FD /* Pods-Zouter_Example-dummy.m */; };
+		80E7527ECD05DF4596E27680C3CB41A9 /* ZouterParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8AD8A53D2276A42647B85DCA96200F /* ZouterParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85E852237B389D98F5348394C67BF004 /* CTMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B260F0FE965032C66BC2F2ACD1A9CD4 /* CTMediator-dummy.m */; };
+		8AF2E747EC3C00517FDE8F1023F7A581 /* ZouterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD850EA35A7267E73A2801B7D552C1 /* ZouterParser.m */; };
+		917B607D1C7B9C39E992C3966EA51603 /* ZouterCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 503EC82DF7DB636B22D166009421D267 /* ZouterCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1958BEA228BE4FF72D41B0E5728553 /* Pods-Zouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B246E9848E4D1F0D947E38495BFD64E /* Pods-Zouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B31C21480018C2B4C2B558F8BEC240B9 /* ZouterParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC2A491820775CD8142C809E58E0D46 /* ZouterParserDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B372187C07303510EFB65868306E3E4E /* ZKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD215C62265E0B3CEE1C221A429299 /* ZKit.m */; };
+		B623D8B678FA3C4E8E05BA9F192B7FA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F47CE6FC18327A1610FA0BEA26855F6 /* CoreGraphics.framework */; };
+		D3AD7A8C2809E82F072786ABB87D0BEE /* ZKitPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 88470A1ED6EB56776B7C45847FB3737D /* ZKitPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E043786964390A5AD5A0AB480C3B9ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */; };
+		E29A73F42204B4D8C9736D24C2726876 /* ZouterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF6A26E55EA770D2FC0F1B57218DDCC /* ZouterPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F7784ED879762F5476FF47B831871BE4 /* Zouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C4B995F44CE46B2F3A7D333BD5C0C /* Zouter.m */; };
+		FAB6F39A0730E6B69989D95C2A3F2881 /* ZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9F951D13E25A719595898FCCCF4A36 /* ZKit.framework */; };
+		FC68B2C2121CE0D846FA72AC2D19F852 /* ZouterExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6652D73A0E2340DFA0B7E30953E07E8E /* ZouterExecutor.m */; };
+		FD1108C265F8F5FD35345C92C2E49783 /* CTMediator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57321101BAAAA68B217D309EF4798849 /* CTMediator.framework */; };
+		FD57BBBB3B33E511DEBF68E128776D06 /* ZKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0313DFB3256D843F26A257D37199090C /* ZKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		313D67DCF51CFFFDD4B558211C2B08E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02E29B413388DC317B688CB3F0ADA9C;
+			remoteInfo = ZKit;
+		};
+		5F505733D768B6B025DD4C86F20D18ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDD61B79F4A4F82DC653BB451C77D45;
+			remoteInfo = Zouter;
+		};
+		84485CB0E42C218B4BB47DD2DE27F49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02E29B413388DC317B688CB3F0ADA9C;
+			remoteInfo = ZKit;
+		};
+		958A2322E0569F68B856AA70C8FA8B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A222DBB9D71B481EE8F2DACD77F8A61;
+			remoteInfo = CTMediator;
+		};
+		99894B37DBC6E31B896115AB725A5DC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75920774031C0604044B475D5BDC24B1;
+			remoteInfo = "Pods-Zouter_Example";
+		};
+		A076E87CA89123E111ED008D420CEA1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A222DBB9D71B481EE8F2DACD77F8A61;
+			remoteInfo = CTMediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01008A010EB432B58A917E0D7DA0AF9D /* CTMediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTMediator.release.xcconfig; sourceTree = "<group>"; };
+		01076434E46C2D2EB62C6A01BBCD4398 /* Zouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zouter-prefix.pch"; sourceTree = "<group>"; };
+		0313DFB3256D843F26A257D37199090C /* ZKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZKit.h; path = ZKit/ZKit/core/ZKit.h; sourceTree = "<group>"; };
+		0775BCB086DD58A97D1F804B377BEE8C /* Zouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zouter-umbrella.h"; sourceTree = "<group>"; };
+		080E90C4AB91CA2213B6C360B81834FB /* ZKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKit-prefix.pch"; sourceTree = "<group>"; };
+		09869E5FF80A752A58A814DB290D7264 /* Zouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zouter.modulemap; sourceTree = "<group>"; };
+		09D148F7ADCFC4637AAD8BE235B6B383 /* Pods-Zouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zouter_Example.modulemap"; sourceTree = "<group>"; };
+		0FDE63E5111F8D686FAB11BA37D2F900 /* Pods-Zouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16E2F8017CA9C7A4661360395E38EF98 /* ZouterCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZouterCommand.m; path = Zouter/Classes/ZouterCommand.m; sourceTree = "<group>"; };
+		1AC2FD3BC0920ED28CE0AF34F0990DE1 /* Pods-Zouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BBC081BE36193DE804FAF0EA5957D00 /* Pods_Zouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zouter_Tests.framework; path = "Pods-Zouter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC2A491820775CD8142C809E58E0D46 /* ZouterParserDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZouterParserDelegate.h; path = Zouter/Classes/ZouterParserDelegate.h; sourceTree = "<group>"; };
+		1ECE4A4227E378E9FADA0360FC9397E0 /* Pods-Zouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		22CB62F90227C6AAD79A50EC1D335C62 /* ZouterExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZouterExecutor.h; path = Zouter/Classes/ZouterExecutor.h; sourceTree = "<group>"; };
+		24D9AC21D86A602994358493476B0118 /* ZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKit.debug.xcconfig; sourceTree = "<group>"; };
+		273DBC6C3102F064CD852D7CAE1ED9A1 /* CTMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-prefix.pch"; sourceTree = "<group>"; };
+		281064968045219B64E820B25EF41AF8 /* ZKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKit-dummy.m"; sourceTree = "<group>"; };
+		2962A5C7B087BA897D03E4F5260F28E4 /* CTMediator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-umbrella.h"; sourceTree = "<group>"; };
+		2BF6A26E55EA770D2FC0F1B57218DDCC /* ZouterPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZouterPrivate.h; path = Zouter/Classes/ZouterPrivate.h; sourceTree = "<group>"; };
+		2DE643C86BAAACACB4FD36AF237286AA /* CTMediator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CTMediator-Info.plist"; sourceTree = "<group>"; };
+		36785C50DA89F58775018A8877B98F34 /* CTMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTMediator.h; path = CTMediator/CTMediator/CTMediator.h; sourceTree = "<group>"; };
+		37025AE191CB93052BB7D4A4EEC4A9FD /* Pods-Zouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zouter_Example-dummy.m"; sourceTree = "<group>"; };
+		4BBD215C62265E0B3CEE1C221A429299 /* ZKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZKit.m; path = ZKit/ZKit/core/ZKit.m; sourceTree = "<group>"; };
+		503EC82DF7DB636B22D166009421D267 /* ZouterCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZouterCommand.h; path = Zouter/Classes/ZouterCommand.h; sourceTree = "<group>"; };
+		51193E45D3590E32D80D5A856DECB38F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		57321101BAAAA68B217D309EF4798849 /* CTMediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTMediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B1C4B995F44CE46B2F3A7D333BD5C0C /* Zouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Zouter.m; path = Zouter/Classes/Zouter.m; sourceTree = "<group>"; };
+		5B260F0FE965032C66BC2F2ACD1A9CD4 /* CTMediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTMediator-dummy.m"; sourceTree = "<group>"; };
+		5BFAF440BB379E8DE49BE3F752BDB6A5 /* Zouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zouter.debug.xcconfig; sourceTree = "<group>"; };
+		5BFCA05C3F9739AAD1AB10E72DCB43D7 /* CTMediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTMediator.debug.xcconfig; sourceTree = "<group>"; };
+		5D9F951D13E25A719595898FCCCF4A36 /* ZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6652D73A0E2340DFA0B7E30953E07E8E /* ZouterExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZouterExecutor.m; path = Zouter/Classes/ZouterExecutor.m; sourceTree = "<group>"; };
+		67E95F120B31D984AC4AEB655908E7C0 /* Pods-Zouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Zouter_Tests-dummy.m"; sourceTree = "<group>"; };
+		68FD71EBA2CC98523D3AACCE8A0D43C8 /* CTMediator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CTMediator.framework; path = CTMediator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE691D08368E7246E87A708181691FB /* ZKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKit.release.xcconfig; sourceTree = "<group>"; };
+		6C22DE5B0E9664F88E79EBBD1E781F2E /* Pods-Zouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zouter_Example-umbrella.h"; sourceTree = "<group>"; };
+		6D01E8F685F757B8FD1F40C6DB0BF9A7 /* ZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZKit.framework; path = ZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E780E77EED08E77E8627D2131988A2E /* Pods-Zouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Zouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B246E9848E4D1F0D947E38495BFD64E /* Pods-Zouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Zouter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7B49C8A74F1CCC48740DE597B6729DA7 /* ZKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZKit-Info.plist"; sourceTree = "<group>"; };
+		7EDD850EA35A7267E73A2801B7D552C1 /* ZouterParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZouterParser.m; path = Zouter/Classes/ZouterParser.m; sourceTree = "<group>"; };
+		7F47CE6FC18327A1610FA0BEA26855F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		88470A1ED6EB56776B7C45847FB3737D /* ZKitPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZKitPrivate.h; path = ZKit/ZKit/core/ZKitPrivate.h; sourceTree = "<group>"; };
+		896483CAC5F4F83C0142638786655D0B /* Pods_Zouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Zouter_Example.framework; path = "Pods-Zouter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C668C7C92F4C16DE55157C2E8CD749A /* Pods-Zouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zouter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		92AD5A6C2CB9F8A677B4A45C0B3BABDE /* Pods-Zouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		931AD23C8A90C77A747EDE524D2F1810 /* Pods-Zouter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zouter_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E18FD3A6B257D3AA4E2A0727285FC16 /* CTMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTMediator.m; path = CTMediator/CTMediator/CTMediator.m; sourceTree = "<group>"; };
+		9E2A5100F5576BE897E78300DE5FDEA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A00590CB48493AB16A09A4B772C5384A /* Zouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zouter.release.xcconfig; sourceTree = "<group>"; };
+		A6747599365467885586D23968402062 /* Pods-Zouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8C4BF37C69AD0D0D7470F2F2DF65CB2 /* Pods-Zouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AAA317DBD20086DE8EB0E124EB3391FF /* Zouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zouter-Info.plist"; sourceTree = "<group>"; };
+		AD8AD8A53D2276A42647B85DCA96200F /* ZouterParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZouterParser.h; path = Zouter/Classes/ZouterParser.h; sourceTree = "<group>"; };
+		AEDEFCDB386FFEB312789E6756102453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF6216CC2DD003471054C9D245C9C212 /* CTMediator+HandyTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CTMediator+HandyTools.h"; path = "CTMediator/CTMediator/CTMediator+HandyTools.h"; sourceTree = "<group>"; };
+		B4227251A7C32E33028E6F6B9DF1E366 /* ZKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZKit.modulemap; sourceTree = "<group>"; };
+		BBA919E1B39DCBA450D93D1B169FC250 /* Pods-Zouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Zouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BCB90EC5CFCAF95DCDD0BAEA2144BAEB /* CTMediator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CTMediator.modulemap; sourceTree = "<group>"; };
+		C35027B02EF98904315138DEB8C687D4 /* CTMediator+HandyTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CTMediator+HandyTools.m"; path = "CTMediator/CTMediator/CTMediator+HandyTools.m"; sourceTree = "<group>"; };
+		D2303D2D18850E3E7A673E6561693720 /* Zouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zouter.framework; path = Zouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40725D1EAB39A4DCCCC07049024F8CB /* Zouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Zouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D87E8ECCC511330CEE64EB8B242350DD /* Pods-Zouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zouter_Tests.modulemap"; sourceTree = "<group>"; };
+		E536D5868BFCC557D5DAE71F0E463BA9 /* ZKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKit-umbrella.h"; sourceTree = "<group>"; };
+		EC1AEF1B50B65C00367A5CEC03147D92 /* Pods-Zouter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Zouter_Tests-Info.plist"; sourceTree = "<group>"; };
+		F03CCA724D2F46CF3BFBC688183B38AD /* Zouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zouter.h; path = Zouter/Classes/Zouter.h; sourceTree = "<group>"; };
+		F2DDAA0A165B43BF28EE621F2CC3D524 /* Zouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zouter-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		236C59BEC1A2E786D9160F2B6EF6BDB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0666EC1BD729F9CAC061DCF53D84891D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EBFF427E66ED6D88E3DBBF040C9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1108C265F8F5FD35345C92C2E49783 /* CTMediator.framework in Frameworks */,
+				5D858CC6961E3E125CBE1C964412B303 /* Foundation.framework in Frameworks */,
+				7F3CD06F2FD4787D5431642F668C76B0 /* UIKit.framework in Frameworks */,
+				FAB6F39A0730E6B69989D95C2A3F2881 /* ZKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49F77C320AB1DB55D2B827CF850D9A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B623D8B678FA3C4E8E05BA9F192B7FA7 /* CoreGraphics.framework in Frameworks */,
+				69B61193218731833D94A63CD9010166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4AA2B09594EAC50AD13E0713DE1732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3DF82AB16D75407B97998C86061128 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCD1A15EDC6CC1E7225C2380AB6F1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E043786964390A5AD5A0AB480C3B9ECB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2B54ABA1E850FA6D77F28A7854DCA0 /* Pods-Zouter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				09D148F7ADCFC4637AAD8BE235B6B383 /* Pods-Zouter_Example.modulemap */,
+				6E780E77EED08E77E8627D2131988A2E /* Pods-Zouter_Example-acknowledgements.markdown */,
+				1AC2FD3BC0920ED28CE0AF34F0990DE1 /* Pods-Zouter_Example-acknowledgements.plist */,
+				37025AE191CB93052BB7D4A4EEC4A9FD /* Pods-Zouter_Example-dummy.m */,
+				1ECE4A4227E378E9FADA0360FC9397E0 /* Pods-Zouter_Example-frameworks.sh */,
+				931AD23C8A90C77A747EDE524D2F1810 /* Pods-Zouter_Example-Info.plist */,
+				6C22DE5B0E9664F88E79EBBD1E781F2E /* Pods-Zouter_Example-umbrella.h */,
+				92AD5A6C2CB9F8A677B4A45C0B3BABDE /* Pods-Zouter_Example.debug.xcconfig */,
+				8C668C7C92F4C16DE55157C2E8CD749A /* Pods-Zouter_Example.release.xcconfig */,
+			);
+			name = "Pods-Zouter_Example";
+			path = "Target Support Files/Pods-Zouter_Example";
+			sourceTree = "<group>";
+		};
+		14CD5F6CE5C8A4E7D4D5D0F9BE921361 /* ZKit */ = {
+			isa = PBXGroup;
+			children = (
+				7F22457B86F7C0AAEDE40A137D7462A3 /* core */,
+				CCCA4D1EC82704941199D68485659C9C /* Support Files */,
+			);
+			name = ZKit;
+			path = ZKit;
+			sourceTree = "<group>";
+		};
+		2341E23CF66CD2747F71C07C6B87CA6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68FD71EBA2CC98523D3AACCE8A0D43C8 /* CTMediator.framework */,
+				896483CAC5F4F83C0142638786655D0B /* Pods_Zouter_Example.framework */,
+				1BBC081BE36193DE804FAF0EA5957D00 /* Pods_Zouter_Tests.framework */,
+				6D01E8F685F757B8FD1F40C6DB0BF9A7 /* ZKit.framework */,
+				D2303D2D18850E3E7A673E6561693720 /* Zouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3F16F5A865E535F9DC046DE3BE68C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51A737B4BE172E1C136829CBDD4619C7 /* Zouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		51A737B4BE172E1C136829CBDD4619C7 /* Zouter */ = {
+			isa = PBXGroup;
+			children = (
+				F03CCA724D2F46CF3BFBC688183B38AD /* Zouter.h */,
+				5B1C4B995F44CE46B2F3A7D333BD5C0C /* Zouter.m */,
+				503EC82DF7DB636B22D166009421D267 /* ZouterCommand.h */,
+				16E2F8017CA9C7A4661360395E38EF98 /* ZouterCommand.m */,
+				22CB62F90227C6AAD79A50EC1D335C62 /* ZouterExecutor.h */,
+				6652D73A0E2340DFA0B7E30953E07E8E /* ZouterExecutor.m */,
+				AD8AD8A53D2276A42647B85DCA96200F /* ZouterParser.h */,
+				7EDD850EA35A7267E73A2801B7D552C1 /* ZouterParser.m */,
+				1DC2A491820775CD8142C809E58E0D46 /* ZouterParserDelegate.h */,
+				2BF6A26E55EA770D2FC0F1B57218DDCC /* ZouterPrivate.h */,
+				D593A1BC9C5D21A6204DF8C3F6B30CB8 /* Pod */,
+				C50056F54B57115263799DB19BEE7720 /* Support Files */,
+			);
+			name = Zouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		761F65EA8FF0721B37150397DE3B13D5 /* CTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				36785C50DA89F58775018A8877B98F34 /* CTMediator.h */,
+				9E18FD3A6B257D3AA4E2A0727285FC16 /* CTMediator.m */,
+				AF6216CC2DD003471054C9D245C9C212 /* CTMediator+HandyTools.h */,
+				C35027B02EF98904315138DEB8C687D4 /* CTMediator+HandyTools.m */,
+				B40CEC8E919C91EA2B82A919B9FBD9BA /* Support Files */,
+			);
+			name = CTMediator;
+			path = CTMediator;
+			sourceTree = "<group>";
+		};
+		7F22457B86F7C0AAEDE40A137D7462A3 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				0313DFB3256D843F26A257D37199090C /* ZKit.h */,
+				4BBD215C62265E0B3CEE1C221A429299 /* ZKit.m */,
+				88470A1ED6EB56776B7C45847FB3737D /* ZKitPrivate.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		A5660FD2D8FA42FF65042938ADDFE8DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				761F65EA8FF0721B37150397DE3B13D5 /* CTMediator */,
+				14CD5F6CE5C8A4E7D4D5D0F9BE921361 /* ZKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B40CEC8E919C91EA2B82A919B9FBD9BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCB90EC5CFCAF95DCDD0BAEA2144BAEB /* CTMediator.modulemap */,
+				5B260F0FE965032C66BC2F2ACD1A9CD4 /* CTMediator-dummy.m */,
+				2DE643C86BAAACACB4FD36AF237286AA /* CTMediator-Info.plist */,
+				273DBC6C3102F064CD852D7CAE1ED9A1 /* CTMediator-prefix.pch */,
+				2962A5C7B087BA897D03E4F5260F28E4 /* CTMediator-umbrella.h */,
+				5BFCA05C3F9739AAD1AB10E72DCB43D7 /* CTMediator.debug.xcconfig */,
+				01008A010EB432B58A917E0D7DA0AF9D /* CTMediator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CTMediator";
+			sourceTree = "<group>";
+		};
+		C50056F54B57115263799DB19BEE7720 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09869E5FF80A752A58A814DB290D7264 /* Zouter.modulemap */,
+				F2DDAA0A165B43BF28EE621F2CC3D524 /* Zouter-dummy.m */,
+				AAA317DBD20086DE8EB0E124EB3391FF /* Zouter-Info.plist */,
+				01076434E46C2D2EB62C6A01BBCD4398 /* Zouter-prefix.pch */,
+				0775BCB086DD58A97D1F804B377BEE8C /* Zouter-umbrella.h */,
+				5BFAF440BB379E8DE49BE3F752BDB6A5 /* Zouter.debug.xcconfig */,
+				A00590CB48493AB16A09A4B772C5384A /* Zouter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Zouter";
+			sourceTree = "<group>";
+		};
+		CCCA4D1EC82704941199D68485659C9C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4227251A7C32E33028E6F6B9DF1E366 /* ZKit.modulemap */,
+				281064968045219B64E820B25EF41AF8 /* ZKit-dummy.m */,
+				7B49C8A74F1CCC48740DE597B6729DA7 /* ZKit-Info.plist */,
+				080E90C4AB91CA2213B6C360B81834FB /* ZKit-prefix.pch */,
+				E536D5868BFCC557D5DAE71F0E463BA9 /* ZKit-umbrella.h */,
+				24D9AC21D86A602994358493476B0118 /* ZKit.debug.xcconfig */,
+				6AE691D08368E7246E87A708181691FB /* ZKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZKit";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4B3F16F5A865E535F9DC046DE3BE68C1 /* Development Pods */,
+				E225E50A2E22606C7616B43D87A8E8C1 /* Frameworks */,
+				A5660FD2D8FA42FF65042938ADDFE8DD /* Pods */,
+				2341E23CF66CD2747F71C07C6B87CA6D /* Products */,
+				F1D7F207460024D9CD5725B34B5A74B5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D593A1BC9C5D21A6204DF8C3F6B30CB8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				51193E45D3590E32D80D5A856DECB38F /* LICENSE */,
+				9E2A5100F5576BE897E78300DE5FDEA4 /* README.md */,
+				D40725D1EAB39A4DCCCC07049024F8CB /* Zouter.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DCD7A253AD6848507FAA0B493A3DB394 /* Pods-Zouter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D87E8ECCC511330CEE64EB8B242350DD /* Pods-Zouter_Tests.modulemap */,
+				0FDE63E5111F8D686FAB11BA37D2F900 /* Pods-Zouter_Tests-acknowledgements.markdown */,
+				A8C4BF37C69AD0D0D7470F2F2DF65CB2 /* Pods-Zouter_Tests-acknowledgements.plist */,
+				67E95F120B31D984AC4AEB655908E7C0 /* Pods-Zouter_Tests-dummy.m */,
+				EC1AEF1B50B65C00367A5CEC03147D92 /* Pods-Zouter_Tests-Info.plist */,
+				7B246E9848E4D1F0D947E38495BFD64E /* Pods-Zouter_Tests-umbrella.h */,
+				A6747599365467885586D23968402062 /* Pods-Zouter_Tests.debug.xcconfig */,
+				BBA919E1B39DCBA450D93D1B169FC250 /* Pods-Zouter_Tests.release.xcconfig */,
+			);
+			name = "Pods-Zouter_Tests";
+			path = "Target Support Files/Pods-Zouter_Tests";
+			sourceTree = "<group>";
+		};
+		DD4FC6B81EEBEFF9CF1832881BAD61BE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F47CE6FC18327A1610FA0BEA26855F6 /* CoreGraphics.framework */,
+				598A55ADDC96B59B845EEFF8D23BB737 /* Foundation.framework */,
+				AEDEFCDB386FFEB312789E6756102453 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E225E50A2E22606C7616B43D87A8E8C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57321101BAAAA68B217D309EF4798849 /* CTMediator.framework */,
+				5D9F951D13E25A719595898FCCCF4A36 /* ZKit.framework */,
+				DD4FC6B81EEBEFF9CF1832881BAD61BE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1D7F207460024D9CD5725B34B5A74B5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A2B54ABA1E850FA6D77F28A7854DCA0 /* Pods-Zouter_Example */,
+				DCD7A253AD6848507FAA0B493A3DB394 /* Pods-Zouter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		115E7C8ACA06CBE361419777676B9C48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3A726BA37ACDC43642F29A8E1B60BA /* CTMediator+HandyTools.h in Headers */,
+				3B94BEF000168E07EAC82C7A25A21458 /* CTMediator-umbrella.h in Headers */,
+				4F58E17DAF09A3035A146DDDDFEFE84B /* CTMediator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF61D17E24644BC646D68E2698EFD92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A39C583A8D9432468B31822B08709AC /* ZKit-umbrella.h in Headers */,
+				FD57BBBB3B33E511DEBF68E128776D06 /* ZKit.h in Headers */,
+				D3AD7A8C2809E82F072786ABB87D0BEE /* ZKitPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		951807B40E7E40C0B61DB9E985EA201E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1958BEA228BE4FF72D41B0E5728553 /* Pods-Zouter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BD8771219AD7DCB66BD0D8CE535508 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F27C88B1C18A25BBF9698571C4CC28 /* Zouter-umbrella.h in Headers */,
+				2C9387FA7840082358E4158BEA5487CA /* Zouter.h in Headers */,
+				917B607D1C7B9C39E992C3966EA51603 /* ZouterCommand.h in Headers */,
+				19E66FD797229CA766143DE2AF24A5DB /* ZouterExecutor.h in Headers */,
+				80E7527ECD05DF4596E27680C3CB41A9 /* ZouterParser.h in Headers */,
+				B31C21480018C2B4C2B558F8BEC240B9 /* ZouterParserDelegate.h in Headers */,
+				E29A73F42204B4D8C9736D24C2726876 /* ZouterPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB844CB810AC9AEC7911E32DDB1708C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF3F8BA54CE846068014348DA1586B5 /* Pods-Zouter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A222DBB9D71B481EE8F2DACD77F8A61 /* CTMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE0457E9249CBF11B87DB7DEEDF0DB2C /* Build configuration list for PBXNativeTarget "CTMediator" */;
+			buildPhases = (
+				115E7C8ACA06CBE361419777676B9C48 /* Headers */,
+				F699361B098428FA5FA9F768BF848938 /* Sources */,
+				C49F77C320AB1DB55D2B827CF850D9A6 /* Frameworks */,
+				A697C861232D981D33BAA24BF4F99825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTMediator;
+			productName = CTMediator;
+			productReference = 68FD71EBA2CC98523D3AACCE8A0D43C8 /* CTMediator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		75920774031C0604044B475D5BDC24B1 /* Pods-Zouter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AB30A93729222B68449699746592DC /* Build configuration list for PBXNativeTarget "Pods-Zouter_Example" */;
+			buildPhases = (
+				ADB844CB810AC9AEC7911E32DDB1708C /* Headers */,
+				C8CF1697CAB3250706A2B913415FCA10 /* Sources */,
+				236C59BEC1A2E786D9160F2B6EF6BDB2 /* Frameworks */,
+				EB41E60D1B6DD92CABDDC13D771CB8C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503B64664B46AAB002AA96E7FC2F9E95 /* PBXTargetDependency */,
+				737C567BAA94584D3C71501363BED062 /* PBXTargetDependency */,
+				93D260F124B4B77A08C73F94BCE0B762 /* PBXTargetDependency */,
+			);
+			name = "Pods-Zouter_Example";
+			productName = "Pods-Zouter_Example";
+			productReference = 896483CAC5F4F83C0142638786655D0B /* Pods_Zouter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B02E29B413388DC317B688CB3F0ADA9C /* ZKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF8FF49B278670689F9AF128021BE6C /* Build configuration list for PBXNativeTarget "ZKit" */;
+			buildPhases = (
+				8EF61D17E24644BC646D68E2698EFD92 /* Headers */,
+				87804FD36FB35027FBE6D4EA97347FE9 /* Sources */,
+				FBCD1A15EDC6CC1E7225C2380AB6F1BA /* Frameworks */,
+				2F4365B32F8A7B13DA687189DC229929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZKit;
+			productName = ZKit;
+			productReference = 6D01E8F685F757B8FD1F40C6DB0BF9A7 /* ZKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E445BDF7CBAE7BD422CEA8E5E16C30F1 /* Pods-Zouter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BCFFBE224C786977E2C141BF6E90576 /* Build configuration list for PBXNativeTarget "Pods-Zouter_Tests" */;
+			buildPhases = (
+				951807B40E7E40C0B61DB9E985EA201E /* Headers */,
+				437736E72C105EE692BC334313899052 /* Sources */,
+				EA4AA2B09594EAC50AD13E0713DE1732 /* Frameworks */,
+				0387B0F60138F8B04E65D15440B9E7CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49B4B6A8343C4AB7E5A3D76BE0D040CD /* PBXTargetDependency */,
+			);
+			name = "Pods-Zouter_Tests";
+			productName = "Pods-Zouter_Tests";
+			productReference = 1BBC081BE36193DE804FAF0EA5957D00 /* Pods_Zouter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBDD61B79F4A4F82DC653BB451C77D45 /* Zouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115927AAC6076C0C22B2123E32AF37A7 /* Build configuration list for PBXNativeTarget "Zouter" */;
+			buildPhases = (
+				A1BD8771219AD7DCB66BD0D8CE535508 /* Headers */,
+				6A87CAAA4F94865C309026A517872B8F /* Sources */,
+				303EBFF427E66ED6D88E3DBBF040C9D5 /* Frameworks */,
+				4689AB4E50EBCE26D92FA4CE3D1C849D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E017F787DE3613E5D678DBC6AF5813 /* PBXTargetDependency */,
+				26D37A452BF22B76D2AEE22B08E38A9A /* PBXTargetDependency */,
+			);
+			name = Zouter;
+			productName = Zouter;
+			productReference = D2303D2D18850E3E7A673E6561693720 /* Zouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2341E23CF66CD2747F71C07C6B87CA6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A222DBB9D71B481EE8F2DACD77F8A61 /* CTMediator */,
+				75920774031C0604044B475D5BDC24B1 /* Pods-Zouter_Example */,
+				E445BDF7CBAE7BD422CEA8E5E16C30F1 /* Pods-Zouter_Tests */,
+				B02E29B413388DC317B688CB3F0ADA9C /* ZKit */,
+				FBDD61B79F4A4F82DC653BB451C77D45 /* Zouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0387B0F60138F8B04E65D15440B9E7CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4365B32F8A7B13DA687189DC229929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4689AB4E50EBCE26D92FA4CE3D1C849D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A697C861232D981D33BAA24BF4F99825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB41E60D1B6DD92CABDDC13D771CB8C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437736E72C105EE692BC334313899052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6850B266D6B3004CE595D0D244BD0561 /* Pods-Zouter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A87CAAA4F94865C309026A517872B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4A347A09EE4DDDD67F21EDCD645699 /* Zouter-dummy.m in Sources */,
+				F7784ED879762F5476FF47B831871BE4 /* Zouter.m in Sources */,
+				792DDF7FCEEA48F5D908366AC06CB13F /* ZouterCommand.m in Sources */,
+				FC68B2C2121CE0D846FA72AC2D19F852 /* ZouterExecutor.m in Sources */,
+				8AF2E747EC3C00517FDE8F1023F7A581 /* ZouterParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87804FD36FB35027FBE6D4EA97347FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6973072BD1EB4BAB1C0BD5B87111DB9D /* ZKit-dummy.m in Sources */,
+				B372187C07303510EFB65868306E3E4E /* ZKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF1697CAB3250706A2B913415FCA10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDEE6EA86CBCC24D94D39234F555B20 /* Pods-Zouter_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F699361B098428FA5FA9F768BF848938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F6DE10E33BD76C9B226D73463E9AA8B /* CTMediator+HandyTools.m in Sources */,
+				85E852237B389D98F5348394C67BF004 /* CTMediator-dummy.m in Sources */,
+				4731D4CB78576EAD3C461B2602EEF905 /* CTMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26D37A452BF22B76D2AEE22B08E38A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZKit;
+			target = B02E29B413388DC317B688CB3F0ADA9C /* ZKit */;
+			targetProxy = 84485CB0E42C218B4BB47DD2DE27F49C /* PBXContainerItemProxy */;
+		};
+		49B4B6A8343C4AB7E5A3D76BE0D040CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Zouter_Example";
+			target = 75920774031C0604044B475D5BDC24B1 /* Pods-Zouter_Example */;
+			targetProxy = 99894B37DBC6E31B896115AB725A5DC6 /* PBXContainerItemProxy */;
+		};
+		503B64664B46AAB002AA96E7FC2F9E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 6A222DBB9D71B481EE8F2DACD77F8A61 /* CTMediator */;
+			targetProxy = A076E87CA89123E111ED008D420CEA1D /* PBXContainerItemProxy */;
+		};
+		737C567BAA94584D3C71501363BED062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZKit;
+			target = B02E29B413388DC317B688CB3F0ADA9C /* ZKit */;
+			targetProxy = 313D67DCF51CFFFDD4B558211C2B08E8 /* PBXContainerItemProxy */;
+		};
+		93D260F124B4B77A08C73F94BCE0B762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zouter;
+			target = FBDD61B79F4A4F82DC653BB451C77D45 /* Zouter */;
+			targetProxy = 5F505733D768B6B025DD4C86F20D18ED /* PBXContainerItemProxy */;
+		};
+		B3E017F787DE3613E5D678DBC6AF5813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = 6A222DBB9D71B481EE8F2DACD77F8A61 /* CTMediator */;
+			targetProxy = 958A2322E0569F68B856AA70C8FA8B23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		017BA88890229197FB0B0F9F282875F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C668C7C92F4C16DE55157C2E8CD749A /* Pods-Zouter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zouter_Example/Pods-Zouter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zouter_Example/Pods-Zouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C04C08215320E43F84D93E62D822E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFCA05C3F9739AAD1AB10E72DCB43D7 /* CTMediator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTMediator/CTMediator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
+				PRODUCT_MODULE_NAME = CTMediator;
+				PRODUCT_NAME = CTMediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4DC2B49A393B1B7EF0D3649A01592BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE691D08368E7246E87A708181691FB /* ZKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZKit/ZKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZKit/ZKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZKit/ZKit.modulemap";
+				PRODUCT_MODULE_NAME = ZKit;
+				PRODUCT_NAME = ZKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5333390A2450607482C938E78046B612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFAF440BB379E8DE49BE3F752BDB6A5 /* Zouter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zouter/Zouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zouter/Zouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zouter/Zouter.modulemap";
+				PRODUCT_MODULE_NAME = Zouter;
+				PRODUCT_NAME = Zouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58EAE9146E9CFE5F9543B307D72B1789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00590CB48493AB16A09A4B772C5384A /* Zouter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zouter/Zouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zouter/Zouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Zouter/Zouter.modulemap";
+				PRODUCT_MODULE_NAME = Zouter;
+				PRODUCT_NAME = Zouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5F50CA3972C43418DA369FB1E932077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D9AC21D86A602994358493476B0118 /* ZKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZKit/ZKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZKit/ZKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZKit/ZKit.modulemap";
+				PRODUCT_MODULE_NAME = ZKit;
+				PRODUCT_NAME = ZKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D15E7D1098E5B446585892AE063F6A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01008A010EB432B58A917E0D7DA0AF9D /* CTMediator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTMediator/CTMediator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
+				PRODUCT_MODULE_NAME = CTMediator;
+				PRODUCT_NAME = CTMediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4358C8E53332396514FFD6436EFAA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6747599365467885586D23968402062 /* Pods-Zouter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zouter_Tests/Pods-Zouter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zouter_Tests/Pods-Zouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9662AE2AD7AFD09D1DA49127DBB9997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA919E1B39DCBA450D93D1B169FC250 /* Pods-Zouter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zouter_Tests/Pods-Zouter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zouter_Tests/Pods-Zouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8D17385114FDF1F942E25C10FBA2B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AD5A6C2CB9F8A677B4A45C0B3BABDE /* Pods-Zouter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Zouter_Example/Pods-Zouter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Zouter_Example/Pods-Zouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115927AAC6076C0C22B2123E32AF37A7 /* Build configuration list for PBXNativeTarget "Zouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5333390A2450607482C938E78046B612 /* Debug */,
+				58EAE9146E9CFE5F9543B307D72B1789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BCFFBE224C786977E2C141BF6E90576 /* Build configuration list for PBXNativeTarget "Pods-Zouter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4358C8E53332396514FFD6436EFAA91 /* Debug */,
+				E9662AE2AD7AFD09D1DA49127DBB9997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF8FF49B278670689F9AF128021BE6C /* Build configuration list for PBXNativeTarget "ZKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F50CA3972C43418DA369FB1E932077 /* Debug */,
+				4DC2B49A393B1B7EF0D3649A01592BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE0457E9249CBF11B87DB7DEEDF0DB2C /* Build configuration list for PBXNativeTarget "CTMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C04C08215320E43F84D93E62D822E73 /* Debug */,
+				D15E7D1098E5B446585892AE063F6A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AB30A93729222B68449699746592DC /* Build configuration list for PBXNativeTarget "Pods-Zouter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D17385114FDF1F942E25C10FBA2B38 /* Debug */,
+				017BA88890229197FB0B0F9F282875F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

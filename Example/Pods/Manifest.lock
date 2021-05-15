@@ -1,0 +1,36 @@
+PODS:
+  - CTMediator (46)
+  - ZKit (3.0.0):
+    - ZKit/core (= 3.0.0)
+  - ZKit/core (3.0.0)
+  - Zouter (2.0.0):
+    - CTMediator
+    - ZKit/core
+
+DEPENDENCIES:
+  - "ZKit (from `git@github.com:lzackx/ZKit.git`)"
+  - Zouter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CTMediator
+
+EXTERNAL SOURCES:
+  ZKit:
+    :git: "git@github.com:lzackx/ZKit.git"
+  Zouter:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  ZKit:
+    :commit: c378036a24918b6c0d780abbffcab41f7dcd0464
+    :git: "git@github.com:lzackx/ZKit.git"
+
+SPEC CHECKSUMS:
+  CTMediator: f1cf58d509fb3192086c367711f039efd769b907
+  ZKit: af89c049721152ecbf90bf896bd373b4ac36101e
+  Zouter: 053978a77235262380d66fe71e1df640d4fd687d
+
+PODFILE CHECKSUM: c08a40c6c95685356a85791bdf93c6fce6f0a2c5
+
+COCOAPODS: 1.10.1

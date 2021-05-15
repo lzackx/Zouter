@@ -1,0 +1,193 @@
+{
+  "name": "ZKit",
+  "module_name": "ZKit",
+  "version": "3.0.0",
+  "summary": "A tool kit for iOS development",
+  "homepage": "https://github.com/lzackx/ZKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lzackx": "zackx@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lzackx/ZKit.git",
+    "tag": "3.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "core",
+  "subspecs": [
+    {
+      "name": "core",
+      "source_files": "ZKit/ZKit/core/*.{m,h}",
+      "private_header_files": "ZKit/ZKit/core/*Private.h",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "sysctl",
+      "source_files": "ZKit/ZKit/sysctl/*.{m,h}",
+      "frameworks": [
+        "Foundation",
+        "CoreFoundation"
+      ],
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "string",
+      "source_files": "ZKit/ZKit/string/*.{m,h}",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "ui",
+      "source_files": "ZKit/ZKit/ui/*.{m,h}",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "info",
+      "source_files": "ZKit/ZKit/info/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "request",
+      "source_files": "ZKit/ZKit/request/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "router",
+      "source_files": "ZKit/ZKit/router/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "tabbar",
+      "source_files": "ZKit/ZKit/tabbar/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "navigationbar",
+      "source_files": "ZKit/ZKit/navigationbar/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "popup",
+      "source_files": "ZKit/ZKit/popup/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "optimize",
+      "source_files": "ZKit/ZKit/optimize/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "webview",
+      "source_files": "ZKit/ZKit/webview/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "flutter",
+      "source_files": "ZKit/ZKit/flutter/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "notification",
+      "source_files": "ZKit/ZKit/notification/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "advertisement",
+      "source_files": "ZKit/ZKit/advertisement/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "payment",
+      "source_files": "ZKit/ZKit/payment/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "location",
+      "source_files": "ZKit/ZKit/location/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "media",
+      "source_files": "ZKit/ZKit/media/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    },
+    {
+      "name": "att",
+      "source_files": "ZKit/ZKit/att/*.{m,h}",
+      "dependencies": {
+        "ZKit/core": [
+
+        ]
+      }
+    }
+  ]
+}

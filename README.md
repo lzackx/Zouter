@@ -1,40 +1,28 @@
 # Zouter
 
-[![Build Status](https://travis-ci.org/lzackx/Zouter.svg?branch=master)](https://github.com/lzackx/Zouter)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/lzackx/Zouter/blob/master/LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-iOS%208.0+-66CCFF.svg)](http://cocoapods.org/pods/Zouter)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Zouter.svg)](http://cocoapods.org/pods/Zouter)
+[![CI Status](https://img.shields.io/travis/lzackx/Zouter.svg?style=flat)](https://travis-ci.org/lzackx/Zouter)
+[![Version](https://img.shields.io/cocoapods/v/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
+[![License](https://img.shields.io/cocoapods/l/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
+[![Platform](https://img.shields.io/cocoapods/p/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
 
-A target-action router tool.
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
-iOS 8.0 or later.
-
 ## Installation
 
-### Cocoapods
+Zouter is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-Zouter is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
-
+```ruby
+pod 'Zouter'
 ```
-pod "Zouter"
-```
-## ZouterDemo
-
-ZouterDemo is the demo of Zouter, to run it, one should do something as follows:
-
-```
-git clone https://github.com/lzackx/Zouter.git
-cd Zouter/ZouterDemo
-pod install
-open ZouterDemo.xcworkspace
-```
-Then, Ta-da :)
 
 ## Author
 
-lzackx
+lzackx, lzackx@lzackx.com
 
 ## License
 

@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Zouter_Example' do
+  pod 'Zouter', :path => '../'
+  pod 'ZKit', :git => 'git@github.com:lzackx/ZKit.git'
+  
+  target 'Zouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
