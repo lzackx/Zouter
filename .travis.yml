@@ -9,10 +9,10 @@ env:
     - WORKSPACE=Zouter.xcworkspace
     - SDK_SCHEME=Zouter
     - DEMO_SCHEME=Zouter
-    - IOS_SDK=iphonesimulator8.0
+    - IOS_SDK=iphonesimulator14.0
   matrix:
-    - DESTINATION="platform=iOS Simulator,OS=8.1,name=iPhone 5s"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="YES"
-    - DESTINATION="platform=iOS Simulator,OS=11.0,name=iPhone X"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="NO"
+    - DESTINATION="platform=iOS Simulator,OS=10.3,name=iPhone 5s"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="NO"
+    - DESTINATION="platform=iOS Simulator,OS=14.0,name=iPhone X"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="NO"
 before_install:
   - gem install cocoapods
   - pod repo update
