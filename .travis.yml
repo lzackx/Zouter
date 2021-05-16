@@ -16,7 +16,7 @@ env:
 before_install:
   - gem install cocoapods
   - pod repo update
-before_script: cd ZouterDemo
+before_script: cd Example
 script:
   - set -o pipefail
   - xcodebuild -version
