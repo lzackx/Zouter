@@ -16,7 +16,7 @@ env:
 before_install:
   - gem install cocoapods
   - pod repo update
-before_script: cd Example
+before_script: pwd
 script:
   - set -o pipefail
   - xcodebuild -version
