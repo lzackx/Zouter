@@ -1,6 +1,6 @@
 # Zouter
 
-[![Build Status](https://travis-ci.org/lzackx/Zouter.svg?branch=master)](https://github.com/lzackx/Zouter)
+[![Build Status](https://api.travis-ci.com/lzackx/Zouter.svg?branch=master)](https://github.com/lzackx/Zouter)
 [![Version](https://img.shields.io/cocoapods/v/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
 [![License](https://img.shields.io/cocoapods/l/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
 [![Platform](https://img.shields.io/cocoapods/p/Zouter.svg?style=flat)](https://cocoapods.org/pods/Zouter)
