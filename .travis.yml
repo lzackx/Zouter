@@ -22,8 +22,8 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
 
-  - xcodebuild test -enableCodeCoverage YES -workspace "$WORKSPACE" -scheme "$DEMO_SCHEME"  -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Debug    ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
-  - xcodebuild test -enableCodeCoverage YES -workspace "$WORKSPACE" -scheme "$DEMO_SCHEME"  -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Release  ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$DEMO_SCHEME"  -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Debug    ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$DEMO_SCHEME"  -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Release  ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
 
   # Run `pod lib lint` if specified
   - if [ $POD_LINT == "YES" ]; then
