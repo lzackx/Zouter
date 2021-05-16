@@ -8,7 +8,7 @@ env:
   global:
     - WORKSPACE=Zouter.xcworkspace
     - SDK_SCHEME=Zouter
-    - DEMO_SCHEME=Zouter
+    - DEMO_SCHEME=Zouter-Example
     - IOS_SDK=iphonesimulator14.0
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=10.3,name=iPhone 5s"  SCHEME="$SCHEME"  SDK="$IOS_SDK"  BUILD_SDK="YES"   BUILD_DEMO="YES"    POD_LINT="NO"
