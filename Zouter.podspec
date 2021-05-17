@@ -11,6 +11,5 @@ Pod::Spec.new do |spec|
   spec.source_files           = 'Zouter/Classes/*.{m,h}'
   spec.private_header_files   = 'Zouter/Classes/*Private.h'
   spec.frameworks             = 'UIKit', 'Foundation'
-  spec.dependency "ZKit/core"
   spec.dependency "CTMediator"
 end
