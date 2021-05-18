@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZouterCommand.h"
 
 //! Project version number for Zouter.
 FOUNDATION_EXPORT double ZouterVersionNumber;
@@ -22,13 +23,10 @@ FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 + (void)initializeWithScheme:(NSString *_Nonnull)scheme;
 + (instancetype _Nonnull )sharedRouter;
 
-// targetActionURL: scheme://[target]/[action]?[params]
-- (void)registerWithPattern:(NSString *_Nonnull)pattern
-			targetActionURL:(NSString *_Nonnull)targetActionURL
-			   synchronizly:(BOOL)synchronizly
-				 willExcute:(void(^_Nullable)(void))willExcute
-				  didExcute:(void(^_Nullable)(void))didExcute;
+// Registration
+- (void)registerCommand:(ZouterCommand *_Nonnull)command;
 
+// Perform
 - (void)performURLString:(NSString * _Nullable)urlString;
 - (void)performURL:(NSURL * _Nullable)url;
 

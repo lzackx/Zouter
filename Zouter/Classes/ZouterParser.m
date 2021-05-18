@@ -7,22 +7,21 @@
 //
 
 #import "ZouterParser.h"
-#import "ZouterCommand.h"
+#import "ZouterCommandLinkedList.h"
 
 @implementation ZouterParser
 
 //  MARK:  Parse
-- (void)parseURL:(NSURL *)url fromRouters:(NSDictionary *)routers {
-	ZouterCommand *command = nil;
-	for (NSString *pattern in routers.allKeys) {
-		@autoreleasepool {
-			NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-			if ([predicate evaluateWithObject:url.absoluteString]) {
-				command = routers[pattern];
-				break;
-			}
+- (void)parseURL:(NSURL *)url fromRouters:(ZouterCommandLinkedList *)routers; {
+	__block ZouterCommand *command = nil;	
+	[routers enumberateWithBlock:^(ZouterCommandLinkNode * _Nonnull node) {
+		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", node.command.pattern];
+		if ([predicate evaluateWithObject:url.absoluteString]) {
+			command = node.command;
+			return YES;
 		}
-	}
+		return NO;
+	}];
 	if (command == nil) {
 #ifdef DEBUG
 		NSLog(@"[ZouterParser]: %@ not matched", url);
@@ -31,7 +30,7 @@
 	}
 	if (self.delegate && [self.delegate respondsToSelector:@selector(parser:command:)]) {
 #ifdef DEBUG
-		NSLog(@"[ZouterParser]: <%@ = %@> ", url, command.taURL);
+		NSLog(@"[ZouterParser]: <%@> => <%@> ", url, command.taURL);
 #endif
 		[self.delegate parser:self command:command];
 	}

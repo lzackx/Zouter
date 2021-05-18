@@ -9,13 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "ZouterParserDelegate.h"
 
+@class ZouterCommandLinkedList;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZouterParser : NSObject
 
 @property (nonatomic, readwrite, weak) id<ZouterParserDelegate> delegate;
 
-- (void)parseURL:(NSURL *)url fromRouters:(NSDictionary *)routers;
+- (void)parseURL:(NSURL *)url fromRouters:(ZouterCommandLinkedList *)routers;
 
 @end
 

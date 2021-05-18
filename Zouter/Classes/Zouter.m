@@ -7,9 +7,6 @@
 //
 
 #import "Zouter.h"
-//#import <UIKit/UIKit.h>
-//#import <objc/objc.h>
-//#import <objc/runtime.h>
 #import "ZouterPrivate.h"
 
 @interface Zouter () <ZouterParserDelegate>
@@ -55,6 +52,7 @@ static id zouter = nil;
         _parser = [[ZouterParser alloc] init];
 		_parser.delegate = self;
         _executor = [[ZouterExecutor alloc] init];
+		_routers = [[ZouterCommandLinkedList alloc] init];
     }
     return self;
 }
@@ -71,19 +69,15 @@ static id zouter = nil;
 }
 
 // MARK: - Registration
-- (void)registerWithPattern:(NSString *)pattern
-			targetActionURL:(NSString *)targetActionURL
-			   synchronizly:(BOOL)synchronizly
-				 willExcute:(ZouterCommandCallback)willExcute
-				  didExcute:(ZouterCommandCallback)didExcute {
-	
-	ZouterCommand *command = [ZouterCommand new];
-	command.taURL = targetActionURL;
-	command.synchronizly = synchronizly;
-	command.willExcute = willExcute;
-	command.didExcute = didExcute;
-	[self.routers setObject:command forKey:pattern];
+- (void)registerCommand:(ZouterCommand *)command {
+	if (command == nil) {
+		return;
+	}
+	ZouterCommandLinkNode *node = [[ZouterCommandLinkNode alloc] init];
+	node.command = command;
+	[self.routers insertNode:node];
 }
+
 
 // MARK: - Perform URL
 - (void)performURLString:(NSString * _Nullable)urlString {
@@ -100,7 +94,7 @@ static id zouter = nil;
 		NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, url);
 		return;
 	}
-	[self.parser parseURL:url fromRouters:[self.routers copy]];
+	[self.parser parseURL:url fromRouters:self.routers];
 }
 
 // MARK: - ZouterParserDelegate
