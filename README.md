@@ -17,8 +17,14 @@ Zouter is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Zouter'
+pod 'Zouter', '~> 3.0.0'
 ```
+
+## Features
+
+- [x] Target-Action
+- [x] Registration
+- [x] Priority
 
 ## Author
 
