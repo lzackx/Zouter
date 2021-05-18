@@ -17,12 +17,12 @@
 		return;
 	}
 	if (self.willExcute) {
-		self.willExcute();
+		self.willExcute(self);
 	}
 	typeof(self) wSelf = self;
 	[[ZMediator sharedInstance] performActionWithUrl:url completion:^(NSDictionary * _Nullable info) {
 		if (wSelf.didExcute) {
-			wSelf.didExcute();
+			wSelf.didExcute(self);
 		}
 	}];
 }

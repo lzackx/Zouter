@@ -17,7 +17,9 @@ typedef NS_ENUM(NSInteger, ZouterCommandPriority) {
 	ZouterCommandPriorityHighest = 999,
 };
 
-typedef void(^ZouterCommandCallback)(void);
+@class ZouterCommand;
+
+typedef void(^ZouterCommandCallback)(ZouterCommand *command);
 
 @interface ZouterCommand : NSObject
 
