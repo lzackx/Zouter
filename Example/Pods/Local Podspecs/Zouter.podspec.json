@@ -22,13 +22,5 @@
   "frameworks": [
     "UIKit",
     "Foundation"
-  ],
-  "dependencies": {
-    "ZKit/core": [
-
-    ],
-    "CTMediator": [
-
-    ]
-  }
+  ]
 }
