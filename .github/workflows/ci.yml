@@ -1,0 +1,37 @@
+name: Test And Lint
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  # Also trigger on page_build, as well as release created events
+  page_build:
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Switch XCode Version
+      run: sudo xcode-select -s /Applications/Xcode_12.app
+    - name: Install Dependences
+      run: |
+        cd Example
+        pod update --repo-update
+      shell: bash
+    - name: Test and Lint
+      uses: ty0x2333/cocoapods-action@master
+      with:
+        test: true
+        lint: true
+        use_modern_build_system: true
+        additional_build_params: -destination 'platform=iOS Simulator,name=iPhone SE,OS=14.0'
+        additional_lint_params: --allow-warnings --verbose
