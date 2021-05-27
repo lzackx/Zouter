@@ -1,4 +1,4 @@
-name: Test And Lint
+name: Test & Lint
 
 on:
   # Trigger the workflow on push or pull request,
@@ -33,5 +33,5 @@ jobs:
         test: true
         lint: true
         use_modern_build_system: true
-        additional_build_params: -destination 'platform=iOS Simulator,name=iPhone SE,OS=14.0'
+        additional_build_params: -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.0'
         additional_lint_params: --allow-warnings --verbose
