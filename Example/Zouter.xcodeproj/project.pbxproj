@@ -346,12 +346,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Zouter_Example/Pods-Zouter_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZKit/ZKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Zouter/Zouter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zouter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

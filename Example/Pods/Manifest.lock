@@ -1,28 +1,16 @@
 PODS:
-  - ZKit (3.0.0):
-    - ZKit/core (= 3.0.0)
-  - ZKit/core (3.0.0)
   - Zouter (2.0.0)
 
 DEPENDENCIES:
-  - "ZKit (from `git@github.com:lzackx/ZKit.git`)"
   - Zouter (from `../`)
 
 EXTERNAL SOURCES:
-  ZKit:
-    :git: "git@github.com:lzackx/ZKit.git"
   Zouter:
     :path: "../"
 
-CHECKOUT OPTIONS:
-  ZKit:
-    :commit: c378036a24918b6c0d780abbffcab41f7dcd0464
-    :git: "git@github.com:lzackx/ZKit.git"
-
 SPEC CHECKSUMS:
-  ZKit: af89c049721152ecbf90bf896bd373b4ac36101e
   Zouter: 74f5a65ef8057d07b45cb90b67af87f709b7f564
 
-PODFILE CHECKSUM: c08a40c6c95685356a85791bdf93c6fce6f0a2c5
+PODFILE CHECKSUM: 24c18178b4b9240a2bc089da2d008e97a29b7641
 
 COCOAPODS: 1.10.0
