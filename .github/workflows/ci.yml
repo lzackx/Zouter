@@ -30,7 +30,7 @@ jobs:
     - name: Test and Lint
       uses: ty0x2333/cocoapods-action@master
       with:
-        test: true
+        test: false
         lint: true
         use_modern_build_system: true
         additional_build_params: -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.0'
