@@ -12,7 +12,11 @@
 @implementation ZouterCommand
 
 - (void)run {
-	NSURL *url = [self wrappedTargetActionURL];
+	[self runWithParameters:@{}];
+}
+
+- (void)runWithParameters:(NSDictionary *)parameters {
+	NSURL *url = [self wrappedTargetActionURLWithParameters:parameters];
 	if (url == nil) {
 		return;
 	}
@@ -28,19 +32,19 @@
 }
 
 // MARK: - Private Methods
-- (NSURL *)wrappedTargetActionURL {
+- (NSURL *)wrappedTargetActionURLWithParameters:(NSDictionary *)parameters {
 	NSURLComponents *urlComponents = [NSURLComponents componentsWithString:self.taURL];
-	if (self.parameters != nil && [self.parameters count] > 0) {
-		NSString *query = urlComponents.query;
-		for (NSString *pk in self.parameters.allKeys) {
-			if ([pk isEqualToString:kZMediatorParamsKeySwiftTargetModuleName]) {
-				query = [self appendQuery:query withNewQuery:[self queryStringOfSwiftModuleName]];
-			}
-			else if ([pk isEqualToString:kZMediatorParamsKeyClassActionCalled]) {
-				query = [self appendQuery:query withNewQuery:[self queryStringOfClassActionCalled]];
-			}
+	NSMutableDictionary *queries = [NSMutableDictionary dictionary];
+	[queries addEntriesFromDictionary:self.parameters];
+	[queries addEntriesFromDictionary:parameters];
+	NSMutableArray<NSURLQueryItem *> *queryItems = [NSMutableArray array];
+	if (queries != nil && [queries.allKeys count] > 0) {
+		for (NSString *qk in queries.allKeys) {
+			NSURLQueryItem *qi = [NSURLQueryItem queryItemWithName:qk
+															 value:[NSString stringWithFormat:@"%@", queries[qk]]];
+			[queryItems addObject:qi];
 		}
-		urlComponents.query = query;
+		urlComponents.queryItems = queryItems;
 	}
 	NSURL *url = [urlComponents URL];
 	return url;

@@ -98,8 +98,8 @@ static id zouter = nil;
 }
 
 // MARK: - ZouterParserDelegate
-- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command {
-	[self.executor executeCommand:command];
+- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command parameters:(NSDictionary *)parameters {
+	[self.executor executeCommand:command parameters:parameters];
 }
 
 @end

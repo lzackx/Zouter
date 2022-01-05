@@ -28,30 +28,23 @@
 #endif
 		return;
 	}
-	if (self.delegate && [self.delegate respondsToSelector:@selector(parser:command:)]) {
+	if (self.delegate && [self.delegate respondsToSelector:@selector(parser:command:parameters:)]) {
 #ifdef DEBUG
 		NSLog(@"[ZouterParser]: <%@> => <%@> ", url, command.taURL);
 #endif
-		[self.delegate parser:self command:command];
+		NSDictionary *query = [self parseQueryWithURL:url];
+		[self.delegate parser:self command:command parameters:query];
 	}
 }
 
-//- (NSDictionary *)parseQuery:(NSString *)query {
-//
-//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-//    for (NSString *parameter in [query componentsSeparatedByString:@"&"]) {
-//        NSArray<NSString *> *elements = [parameter componentsSeparatedByString:@"="];
-//        if ([elements count] < 2) {
-//            continue;
-//        }
-//        NSString *key = [elements firstObject];
-//        NSObject *value = [elements lastObject];
-//        if (key && value) {
-//            [parameters setObject:value forKey:key];
-//        }
-//    }
-//    return parameters;
-//}
+- (NSDictionary *)parseQueryWithURL:(NSURL *)url {
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+	NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+	for (NSURLQueryItem *qi in urlComponents.queryItems) {
+		[parameters setObject:qi.value forKey:qi.name];
+	}
+    return parameters;
+}
 
 @end
 

@@ -28,10 +28,10 @@
     return self;
 }
 
-- (void)executeCommand:(ZouterCommand *)command {
+- (void)executeCommand:(ZouterCommand *)command parameters:(NSDictionary *)parameters {
 	
 	NSOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
-		[command run];
+		[command runWithParameters:parameters];
 	}];
 	if (command.synchronizly) {
 		[operation start];

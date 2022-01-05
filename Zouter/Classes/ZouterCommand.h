@@ -33,6 +33,7 @@ typedef void(^ZouterCommandCallback)(ZouterCommand *command);
 @property (nonatomic, readwrite, copy)  NSDictionary<NSString *, NSObject *> * _Nullable parameters;
 
 - (void)run;
+- (void)runWithParameters:(NSDictionary *)parameters;
 
 @end
 

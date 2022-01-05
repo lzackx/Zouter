@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZouterParserDelegate <NSObject>
 
-- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command;
+- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command parameters:(NSDictionary *)parameters;
 
 @end
 
