@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZouterCommand.h"
 
 
 @class ZouterParser;
@@ -15,7 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZouterParserDelegate <NSObject>
 
-- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command parameters:(NSDictionary *)parameters;
+- (void)parser:(ZouterParser *)parser
+       command:(ZouterCommand *)command
+    parameters:(NSDictionary *)parameters
+completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback;
 
 @end
 

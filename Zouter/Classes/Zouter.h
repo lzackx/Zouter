@@ -27,7 +27,10 @@ FOUNDATION_EXPORT const unsigned char ZouterVersionString[];
 - (void)registerCommand:(ZouterCommand *_Nonnull)command;
 
 // Perform
-- (void)performURLString:(NSString * _Nullable)urlString;
-- (void)performURL:(NSURL * _Nullable)url;
+- (void)performURLString:(NSString * _Nullable)urlString
+       completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback;
+
+- (void)performURL:(NSURL * _Nullable)url
+ completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback;
 
 @end

@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init;
 
-- (void)executeCommand:(ZouterCommand *)command parameters:(NSDictionary *)parameters;
+- (void)executeCommand:(ZouterCommand *)command
+            parameters:(NSDictionary *)parameters
+     completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback;
 
 @end
 

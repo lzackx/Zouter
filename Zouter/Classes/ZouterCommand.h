@@ -19,7 +19,9 @@ typedef NS_ENUM(NSInteger, ZouterCommandPriority) {
 
 @class ZouterCommand;
 
-typedef void(^ZouterCommandCallback)(ZouterCommand *command);
+typedef void(^ZouterCommandWillExcuteCallback)(ZouterCommand *command);
+typedef void(^ZouterCommandDidExcuteCallback)(ZouterCommand *command, NSDictionary * _Nullable info);
+typedef void(^ZouterCommandCompledCallback)(ZouterCommand *command, NSDictionary * _Nullable info);
 
 @interface ZouterCommand : NSObject
 
@@ -28,12 +30,13 @@ typedef void(^ZouterCommandCallback)(ZouterCommand *command);
 @property (nonatomic, readwrite, copy) NSString *taURL; // Target Action URL
 @property (nonatomic, readwrite, assign) BOOL synchronizly;
 @property (nonatomic, readwrite, assign) ZouterCommandPriority priority;
-@property (nonatomic, readwrite, copy) __nullable ZouterCommandCallback willExcute;
-@property (nonatomic, readwrite, copy) __nullable ZouterCommandCallback didExcute;
+@property (nonatomic, readwrite, copy) __nullable ZouterCommandWillExcuteCallback willExcute;
+@property (nonatomic, readwrite, copy) __nullable ZouterCommandDidExcuteCallback didExcute;
 @property (nonatomic, readwrite, copy)  NSDictionary<NSString *, NSObject *> * _Nullable parameters;
 
 - (void)run;
-- (void)runWithParameters:(NSDictionary *)parameters;
+- (void)runWithParameters:(NSDictionary *)parameters
+        completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback;
 
 @end
 

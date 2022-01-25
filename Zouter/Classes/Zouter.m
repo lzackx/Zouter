@@ -80,26 +80,36 @@ static id zouter = nil;
 
 
 // MARK: - Perform URL
-- (void)performURLString:(NSString * _Nullable)urlString {
+- (void)performURLString:(NSString * _Nullable)urlString
+       completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback {
 	NSURL *url = [[NSURL alloc] initWithString:urlString];
 	if (!url) {
 		NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, urlString);
 		return;
 	}
-	[self performURL:url];
+	[self performURL:url
+   completedCallback:completedCallback];
 }
 
-- (void)performURL:(NSURL * _Nullable)url {
+- (void)performURL:(NSURL * _Nullable)url
+ completedCallback:(ZouterCommandCompledCallback)completedCallback {
 	if (!url) {
 		NSLog(@"[Zouter %@]: Invalid URL => %@", self.scheme, url);
 		return;
 	}
-	[self.parser parseURL:url fromRouters:self.routers];
+	[self.parser parseURL:url
+              fromRouters:self.routers
+        completedCallback:completedCallback];
 }
 
 // MARK: - ZouterParserDelegate
-- (void)parser:(ZouterParser *)parser command:(ZouterCommand *)command parameters:(NSDictionary *)parameters {
-	[self.executor executeCommand:command parameters:parameters];
+- (void)parser:(ZouterParser *)parser
+       command:(ZouterCommand *)command
+    parameters:(NSDictionary *)parameters
+completedCallback:(ZouterCommandCompledCallback)completedCallback{
+    [self.executor executeCommand:command
+                       parameters:parameters
+                completedCallback:completedCallback];
 }
 
 @end

@@ -12,7 +12,9 @@
 @implementation ZouterParser
 
 //  MARK:  Parse
-- (void)parseURL:(NSURL *)url fromRouters:(ZouterCommandLinkedList *)routers; {
+- (void)parseURL:(NSURL *)url
+     fromRouters:(ZouterCommandLinkedList *)routers
+completedCallback:(ZouterCommandCompledCallback _Nullable)completedCallback {
 	__block ZouterCommand *command = nil;	
 	[routers enumberateWithBlock:^(ZouterCommandLinkNode * _Nonnull node) {
 		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", node.command.pattern];
@@ -28,12 +30,16 @@
 #endif
 		return;
 	}
-	if (self.delegate && [self.delegate respondsToSelector:@selector(parser:command:parameters:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(parser:command:parameters:completedCallback:)]) {
 #ifdef DEBUG
 		NSLog(@"[ZouterParser]: <%@> => <%@> ", url, command.taURL);
 #endif
 		NSDictionary *query = [self parseQueryWithURL:url];
-		[self.delegate parser:self command:command parameters:query];
+		[self.delegate
+         parser:self
+         command:command
+         parameters:query
+         completedCallback:completedCallback];
 	}
 }
 

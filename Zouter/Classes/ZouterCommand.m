@@ -12,10 +12,11 @@
 @implementation ZouterCommand
 
 - (void)run {
-	[self runWithParameters:@{}];
+	[self runWithParameters:@{} completedCallback:nil];
 }
 
-- (void)runWithParameters:(NSDictionary *)parameters {
+- (void)runWithParameters:(NSDictionary *)parameters
+        completedCallback:(ZouterCommandCompledCallback)completedCallback {
 	NSURL *url = [self wrappedTargetActionURLWithParameters:parameters];
 	if (url == nil) {
 		return;
@@ -26,8 +27,11 @@
 	typeof(self) wSelf = self;
 	[[ZMediator sharedInstance] performActionWithUrl:url completion:^(NSDictionary * _Nullable info) {
 		if (wSelf.didExcute) {
-			wSelf.didExcute(self);
+			wSelf.didExcute(self, info);
 		}
+        if (completedCallback) {
+            completedCallback(self, info);
+        }
 	}];
 }
 
